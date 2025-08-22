@@ -1,0 +1,20 @@
+{
+  "key": "PAYMENT-001",
+  "summary": "Implement subscription payment processing with automatic renewal",
+  "description": "Users should be able to subscribe to Habitto's premium services with automatic monthly renewal. The system should handle payment processing, failed payments, and subscription management.\n\nRequirements:\n- Support for credit card and digital wallet payments\n- Automatic monthly renewal processing\n- Failed payment retry logic with email notifications\n- Subscription cancellation and refund processing\n- Payment history and invoice generation\n\nAcceptance Criteria:\n- User can enter payment details securely\n- System processes payment and confirms subscription\n- Failed payments trigger retry attempts with notifications\n- Users can cancel subscription with prorated refunds\n- Payment history is accessible in user dashboard\n\nFigma Design: https://www.figma.com/file/abc123/payment-flow",
+  "priority": {"name": "High"},
+  "assignee": {"displayName": "Backend Development Team"},
+  "reporter": {"displayName": "Product Manager"},
+  "labels": ["backend", "payment", "subscription", "billing", "security"],
+  "components": [{"name": "Payment Processing"}, {"name": "Subscription Management"}],
+  "comments": [
+    {
+      "body": "This feature is critical for Habitto's revenue model and must be PCI compliant.",
+      "author": {"displayName": "Security Engineer"}
+    },
+    {
+      "body": "Need to ensure seamless user experience during payment processing.",
+      "author": {"displayName": "UX Designer"}
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "key": "PROJ-123",
+  "summary": "Implement new user dashboard with responsive design",
+  "description": "Create a new dashboard for users to view their data, charts, and analytics. Should be mobile-friendly and include real-time updates. Figma link: https://www.figma.com/file/abc123/dashboard-design",
+  "priority": {"name": "High"},
+  "assignee": {"displayName": "Frontend Team"},
+  "reporter": {"displayName": "Product Manager"},
+  "labels": ["frontend", "dashboard", "responsive"],
+  "components": [{"name": "User Interface"}],
+  "comments": []
+}

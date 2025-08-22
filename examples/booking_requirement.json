@@ -1,0 +1,20 @@
+{
+  "key": "BOOKING-001",
+  "summary": "As customer booking an advisory session, I want the ability to see more availability if my current advisor does not have many",
+  "description": "so that I can find the earliest available time slot that works for both me and the advisor\n\nBackground\n\nData shows users prefer weekend sessions (esp. Saturdays).\nCurrent random assignment of advisors creates uneven distribution: some overbooked, others underutilized.\nAllowing users to choose between their assigned advisor or a shared pool will balance workload and improve user experience.\n\nRequirements & Solution Approach\n\nScope: Applies only to the first session.\nDefault setting: \"Single Availability\" (assigned advisor only).\nOptions: User chooses between single availability (assigned advisor only) or shared availability (all advisors).\nShared availability:\nDisplays the earliest available slots across multiple advisors.\nIf multiple advisors are available at the same slot, system prioritizes booking with the currently assigned advisor.\nIf user books with a different advisor, that advisor becomes the new assigned advisor going forward.\n\nAcceptance Criteria\n\nDefault option\nGiven a user is booking their first session,\nWhen they land on the booking screen,\nThen the system should default to \"Single Availability\" (assigned advisor only).\n\nSingle availability flow\nGiven a user remains on \"Single Availability,\"\nWhen they view available slots,\nThen only the assigned advisor's slots should be displayed.\n\nSwitching to shared availability\nGiven a user is booking their first session,\nWhen they toggle to \"Shared Availability,\"\nThen the system should refresh and display available slots across all advisors, sorted by earliest time.\n\nMultiple advisors at same slot\nGiven multiple advisors are available at a shared slot,\nWhen the user books that slot,\nThen the session should be assigned to the user's current assigned advisor by default.\n\nBooking with a different advisor\nGiven a user books their first session with a different advisor than their originally assigned one,\nWhen booking is confirmed,\nThen the system should update the user's assigned advisor to the newly booked advisor.\n\nFallback behavior\nGiven a user selects \"Shared Availability,\"\nWhen no other advisors have available slots,\nThen the system should show only the assigned advisor's slots.\n\nEdge case – toggling\nGiven a user toggles between \"Single Availability\" and \"Shared Availability,\"\nWhen they switch modes,\nThen the system should refresh the slot list without restarting the booking flow.\n\nFigma Design: https://www.figma.com/file/fnCxddHpd5tOcjYxzliAxc?type=design&node-id=141990%3A157845&mode=design",
+  "priority": {"name": "High"},
+  "assignee": {"displayName": "Frontend Development Team"},
+  "reporter": {"displayName": "Product Manager"},
+  "labels": ["frontend", "booking", "advisory", "availability", "user-experience"],
+  "components": [{"name": "Booking System"}, {"name": "Advisor Management"}],
+  "comments": [
+    {
+      "body": "This feature will significantly improve user satisfaction and advisor utilization rates.",
+      "author": {"displayName": "UX Designer"}
+    },
+    {
+      "body": "Need to ensure the advisor assignment logic is properly tested for edge cases.",
+      "author": {"displayName": "QA Engineer"}
+    }
+  ]
+}

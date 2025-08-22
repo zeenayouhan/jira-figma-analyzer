@@ -1,0 +1,20 @@
+{
+  "key": "SEARCH-001",
+  "summary": "Implement advanced search and filter functionality for advisor discovery",
+  "description": "Users should be able to search and filter advisors based on various criteria to find the best match for their needs. The system should provide intelligent search suggestions and personalized recommendations.\n\nRequirements:\n- Search by advisor name, specialization, location, and availability\n- Filter by price range, rating, experience level, and languages\n- Autocomplete and search suggestions\n- Sort results by relevance, rating, price, and availability\n- Save search preferences and history\n- Personalized recommendations based on user profile\n\nAcceptance Criteria:\n- User can enter search terms and get relevant results\n- Filters can be applied and combined effectively\n- Search results are ranked by relevance and user preferences\n- Empty search results show helpful suggestions\n- Search history is saved for logged-in users\n- Performance remains fast even with large advisor database\n\nFigma Design: https://www.figma.com/file/search123/advisor-search",
+  "priority": {"name": "Medium"},
+  "assignee": {"displayName": "Frontend Development Team"},
+  "reporter": {"displayName": "Product Manager"},
+  "labels": ["frontend", "search", "discovery", "advisors", "user-experience"],
+  "components": [{"name": "Search Engine"}, {"name": "User Interface"}],
+  "comments": [
+    {
+      "body": "Search performance is critical - users expect results within 1 second.",
+      "author": {"displayName": "Performance Engineer"}
+    },
+    {
+      "body": "Consider implementing machine learning for better search relevance.",
+      "author": {"displayName": "Data Scientist"}
+    }
+  ]
+}

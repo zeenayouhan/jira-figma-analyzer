@@ -1,0 +1,23 @@
+{
+  "key": "APP-4892",
+  "summary": "As registered customer, I can update and validate my mobile number directly from the app",
+  "description": "Habitto uses a user's phone number as their login ID. To ensure account security and data integrity, updating a phone number must involve OTP verification, backend sync, and communication to the user. This update flow must support a fallback mechanism for SMS delivery issues.\n\nScope:\n• UI support for editing the phone number within the profile section\n• SMS OTP verification flow for new phone number\n• Forced logout and re-login with updated phone number\n• Backend updates to user data and external services\n• Confirmation email upon successful phone number change\n\nAcceptance Criteria:\n1. Given a user is viewing their profile in the app, When they tap the edit icon next to their phone number, Then they should see an input field to enter a new phone number and a CTA to request an OTP.\n2. Given a user enters a new phone number and requests an OTP, When the SMS is successfully sent, Then they should be prompted to enter the 6-digit OTP for verification.\n3. Given a user enters a valid OTP, When the verification succeeds, Then the new phone number should be saved to the backend, and the user should be logged out.\n4. Given the phone number update is successful, When the backend processes the change, Then the new number should be:\n   • Saved to the Users table\n   • Synced to OneSignal, Mixpanel, and Sendgrid\n5. Given the phone number update is complete, When the backend confirms the change, Then a confirmation email should be sent to the user's registered email address.\n6. Given the SMS OTP delivery fails, When retry logic is triggered, Then the system should attempt fallback options\n7. Given the user is logged out after phone update, When they open the app again, Then they should be prompted to log in using the new phone number.",
+  "priority": {"name": "High"},
+  "assignee": {"displayName": "Malith Tennakoon"},
+  "reporter": {"displayName": "André Bose do Amaral"},
+  "labels": ["profile", "authentication", "security", "otp", "sms"],
+  "components": [{"name": "User Profile"}, {"name": "Authentication"}],
+  "comments": [
+    {
+      "body": "hi Malith Tennakoon Omega Priyankara here is the email template link: https://mc.sendgrid.com/dynamic-templates/d-ca3813ef338c4bb08111aa3f9c9f3536/version/8d350cb5-86a8-47fc-84ef-82b58cb61c11/editor\nid: d-ca3813ef338c4bb08111aa3f9c9f3536",
+      "author": {"displayName": "Phat Nguyen"}
+    },
+    {
+      "body": "New flow https://www.figma.com/board/eiu2vzjmB7so50ttm2AhHG/Change-Phone-number-flow?node-id=0-1&t=IciCJXLRQD3rXoI8-0",
+      "author": {"displayName": "Malith Tennakoon"}
+    }
+  ],
+  "figma_links": [
+    "https://www.figma.com/board/eiu2vzjmB7so50ttm2AhHG/Change-Phone-number-flow?node-id=0-1&t=IciCJXLRQD3rXoI8-0"
+  ]
+}

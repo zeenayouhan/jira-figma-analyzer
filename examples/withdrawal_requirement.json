@@ -1,0 +1,20 @@
+{
+  "key": "WITHDRAW-001",
+  "summary": "Implement money withdrawal feature for Habitto users",
+  "description": "Users should be able to withdraw their earnings from their Habitto account to their bank account or digital wallet. The system should handle identity verification, fraud detection, and regulatory compliance.\n\nRequirements:\n- Support bank transfer and digital wallet withdrawals\n- Minimum withdrawal amount of $10, maximum of $5000 per day\n- Identity verification required for withdrawals over $100\n- Real-time fraud detection and risk assessment\n- Withdrawal processing within 1-3 business days\n- Email notifications for withdrawal status updates\n\nAcceptance Criteria:\n- User can initiate withdrawal request from dashboard\n- System validates withdrawal amount against limits and balance\n- Identity verification flow is triggered when required\n- Withdrawal status is tracked and displayed to user\n- Fees are calculated and disclosed before confirmation\n- Compliance reporting is generated for regulatory requirements\n\nFigma Design: https://www.figma.com/file/def789/withdrawal-flow",
+  "priority": {"name": "High"},
+  "assignee": {"displayName": "Backend Development Team"},
+  "reporter": {"displayName": "Product Manager"},
+  "labels": ["backend", "withdrawal", "payment", "security", "compliance"],
+  "components": [{"name": "Payment Processing"}, {"name": "User Management"}],
+  "comments": [
+    {
+      "body": "This feature must comply with anti-money laundering regulations and fraud prevention requirements.",
+      "author": {"displayName": "Compliance Officer"}
+    },
+    {
+      "body": "Need to ensure withdrawal limits are configurable for different user tiers.",
+      "author": {"displayName": "Product Manager"}
+    }
+  ]
+}
