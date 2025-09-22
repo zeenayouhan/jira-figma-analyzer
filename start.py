@@ -7,19 +7,20 @@ Handles errors gracefully and provides better logging
 import os
 import sys
 import subprocess
+import traceback
 
 def main():
+    print("🚀 Starting Jira-Figma Analyzer...")
+    
     # Set environment variables
     os.environ['STREAMLIT_SERVER_HEADLESS'] = 'true'
     os.environ['STREAMLIT_BROWSER_GATHER_USAGE_STATS'] = 'false'
     os.environ['STREAMLIT_SERVER_ENABLE_CORS'] = 'true'
     os.environ['STREAMLIT_SERVER_ENABLE_XSRF_PROTECTION'] = 'false'
     
-    # Get port from Railway - handle both PORT and STREAMLIT_SERVER_PORT
-    port = os.getenv('PORT') or os.getenv('STREAMLIT_SERVER_PORT', '8501')
-    
-    print(f"Starting Jira-Figma Analyzer on port {port}")
-    print(f"Environment variables: PORT={os.getenv('PORT')}, STREAMLIT_SERVER_PORT={os.getenv('STREAMLIT_SERVER_PORT')}")
+    # Get port from Railway
+    port = os.getenv('PORT', '8501')
+    print(f"Using port: {port}")
     
     # Fix database schema before starting
     print("Fixing database schema...")
@@ -29,8 +30,20 @@ def main():
         print("✅ Database schema fixed")
     except Exception as e:
         print(f"⚠️ Database schema fix failed: {e}")
+        traceback.print_exc()
+    
+    # Test imports
+    print("Testing imports...")
+    try:
+        from complete_streamlit_app import main as app_main
+        print("✅ Complete Streamlit app imported successfully")
+    except Exception as e:
+        print(f"❌ Error importing complete_streamlit_app: {e}")
+        traceback.print_exc()
+        return 1
     
     # Run Streamlit
+    print("Starting Streamlit...")
     cmd = [
         sys.executable, '-m', 'streamlit', 'run',
         'complete_streamlit_app.py',
@@ -41,7 +54,15 @@ def main():
     ]
     
     print(f"Running command: {' '.join(cmd)}")
-    subprocess.run(cmd)
+    try:
+        subprocess.run(cmd, check=True)
+    except subprocess.CalledProcessError as e:
+        print(f"❌ Streamlit failed with exit code {e.returncode}")
+        return e.returncode
+    except Exception as e:
+        print(f"❌ Error running Streamlit: {e}")
+        traceback.print_exc()
+        return 1
 
 if __name__ == "__main__":
-    main()
+    exit(main())
