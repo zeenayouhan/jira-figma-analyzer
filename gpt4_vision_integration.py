@@ -53,8 +53,8 @@ class VisualAnalysisResult:
     potential_issues: List[str]
     
     # Metadata
-    analysis_timestamp: str
-    confidence_score: float
+    analysis_timestamp: str = ""
+    confidence_score: float = 0.0
     processing_time: Optional[float] = None
 
 class GPT4VisionAnalyzer:
