@@ -42,18 +42,33 @@ def main():
         
         logger.info("Environment variables loaded successfully")
         
-        # Import and run Streamlit
-        import streamlit.web.cli as stcli
+        # Test imports first
+        logger.info("Testing imports...")
+        try:
+            import streamlit as st
+            logger.info("✅ Streamlit imported successfully")
+            
+            # Test importing the main app
+            import complete_streamlit_app
+            logger.info("✅ complete_streamlit_app imported successfully")
+            
+        except Exception as e:
+            logger.error(f"❌ Import failed: {str(e)}")
+            traceback.print_exc()
+            sys.exit(1)
+        
+        # Get port from environment
+        port = int(os.getenv('PORT', 8501))
+        logger.info(f"Starting Streamlit on port {port}")
         
         # Set Streamlit configuration
         os.environ['STREAMLIT_SERVER_HEADLESS'] = 'true'
         os.environ['STREAMLIT_BROWSER_GATHER_USAGE_STATS'] = 'false'
         os.environ['STREAMLIT_SERVER_ENABLE_CORS'] = 'true'
+        os.environ['STREAMLIT_SERVER_ENABLE_XSRF_PROTECTION'] = 'false'
         
-        # Get port from environment
-        port = int(os.getenv('PORT', 8501))
-        
-        logger.info(f"Starting Streamlit on port {port}")
+        # Import and run Streamlit
+        import streamlit.web.cli as stcli
         
         # Run Streamlit
         sys.argv = [
@@ -62,9 +77,11 @@ def main():
             '--server.port', str(port),
             '--server.address', '0.0.0.0',
             '--server.headless', 'true',
-            '--server.enableCORS', 'true'
+            '--server.enableCORS', 'true',
+            '--server.enableXsrfProtection', 'false'
         ]
         
+        logger.info("Starting Streamlit with args: " + " ".join(sys.argv))
         stcli.main()
         
     except Exception as e:

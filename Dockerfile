@@ -42,13 +42,10 @@ ENV STREAMLIT_SERVER_ADDRESS=0.0.0.0
 ENV STREAMLIT_SERVER_HEADLESS=true
 ENV STREAMLIT_BROWSER_GATHER_USAGE_STATS=false
 ENV STREAMLIT_SERVER_ENABLE_CORS=true
+ENV STREAMLIT_SERVER_ENABLE_XSRF_PROTECTION=false
 
 # Expose port
 EXPOSE 8501
-
-# Health check with longer timeout
-HEALTHCHECK --interval=30s --timeout=30s --start-period=60s --retries=5 \
-    CMD curl -f http://localhost:8501/_stcore/health || exit 1
 
 # Run the application using the startup script
 CMD ["python", "start.py"]
