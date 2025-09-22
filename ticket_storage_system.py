@@ -351,16 +351,34 @@ class TicketStorageSystem:
             ''', (limit,))
             
             rows = cursor.fetchall()
-            conn.close()
             
-            return [{
-                'id': row[0],
-                'ticket_key': row[1],
-            'title': row[2],
-            'description': row[3],
-            'created_at': row[4],
-            'updated_at': row[5]
-        } for row in rows]
+            # Get question counts for each ticket
+            tickets_with_counts = []
+            for row in rows:
+                ticket_id = row[0]
+                
+                # Count questions
+                cursor.execute('SELECT COUNT(*) FROM questions WHERE ticket_id = ?', (ticket_id,))
+                question_count = cursor.fetchone()[0]
+                
+                # Count test cases
+                cursor.execute('SELECT COUNT(*) FROM test_cases WHERE ticket_id = ?', (ticket_id,))
+                test_case_count = cursor.fetchone()[0]
+                
+                tickets_with_counts.append({
+                    'id': row[0],
+                    'ticket_key': row[1],
+                    'title': row[2],
+                    'description': row[3],
+                    'created_at': row[4],
+                    'updated_at': row[5],
+                    'question_count': question_count,
+                    'test_case_count': test_case_count,
+                    'risk_count': 0  # Mock data - would need risks table
+                })
+            
+            conn.close()
+            return tickets_with_counts
         except Exception as e:
             print(f"Error in get_all_tickets: {e}")
             return []
