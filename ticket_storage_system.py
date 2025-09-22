@@ -303,6 +303,53 @@ class TicketStorageSystem:
         
         return [{'date': row[0], 'count': row[1]} for row in rows]
     
+    
+    def delete_ticket(self, ticket_id: str) -> bool:
+        """Delete a ticket and all its associated data."""
+        try:
+            conn = sqlite3.connect(self.db_path)
+            cursor = conn.cursor()
+            
+            # Delete from questions table
+            cursor.execute('DELETE FROM questions WHERE ticket_id = ?', (ticket_id,))
+            
+            # Delete from test_cases table
+            cursor.execute('DELETE FROM test_cases WHERE ticket_id = ?', (ticket_id,))
+            
+            # Delete from tickets table
+            cursor.execute('DELETE FROM tickets WHERE ticket_id = ?', (ticket_id,))
+            
+            # Check if any rows were affected
+            rows_affected = cursor.rowcount
+            
+            conn.commit()
+            conn.close()
+            
+            return rows_affected > 0
+            
+        except Exception as e:
+            print(f"Error deleting ticket {ticket_id}: {e}")
+            return False
+    
+    def delete_all_tickets(self) -> bool:
+        """Delete all tickets and associated data."""
+        try:
+            conn = sqlite3.connect(self.db_path)
+            cursor = conn.cursor()
+            
+            # Delete all data
+            cursor.execute('DELETE FROM questions')
+            cursor.execute('DELETE FROM test_cases')
+            cursor.execute('DELETE FROM tickets')
+            
+            conn.commit()
+            conn.close()
+            
+            return True
+            
+        except Exception as e:
+            print(f"Error deleting all tickets: {e}")
+            return False
     def get_priority_distribution(self) -> List[Dict[str, Any]]:
         """Get priority distribution data for charts."""
         # Mock data since we don't have priority field yet
