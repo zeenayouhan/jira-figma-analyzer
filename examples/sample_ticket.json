@@ -1,0 +1,31 @@
+{
+  "key": "PROJ-123",
+  "summary": "Enable profile Edit for country of residence and gender",
+  "description": "Acceptance Criteria\n\nGiven the user is on the Profile tab,\nWhen they click the Edit button next to Occupation, Country of Residence,\nThen a dropdown should appear allowing them to select from a predefined list (same as used in onboarding).\n\nGiven the user selects a value from the Occupation, Country of Residence dropdown,\nWhen the selection is made,\nThen the new value should be saved to the database in real time.\n\nGiven that a user successfully updates either Occupation or Country of Residence,\nWhen the update completes,\nThen a Mixpanel event may be fired to track the change (optional / nice to have).\n\n",
+  "acceptanceCriteria": [
+    "Given the user is on the Profile tab,",
+    "When they click the Edit button next to Occupation, Country of Residence,",
+    "Then a dropdown should appear allowing them to select from a predefined list (same as used in onboarding).",
+    "Given the user selects a value from the Occupation, Country of Residence dropdown,",
+    "When the selection is made,",
+    "Then the new value should be saved to the database in real time.",
+    "Given that a user successfully updates either Occupation or Country of Residence,",
+    "When the update completes,",
+    "Then a Mixpanel event may be fired to track the change (optional / nice to have).",
+  ],
+  "priority": {"name": "Medium"},
+  "assignee": {"displayName": "Zeenayouhan"},
+  "reporter": {"displayName": "Zeenayouhan"},
+  "labels": ["frontend", "dashboard", "responsive", "analytics", "ui/ux"],
+  "components": [{"name": "User Interface"}, {"name": "Data Visualization"}],
+  "comments": [
+    {
+      "body": "Please ensure the dashboard works well on mobile devices. Users frequently access from smartphones.",
+      "author": {"displayName": "UX Designer"}
+    },
+    {
+      "body": "Consider adding accessibility features for screen readers and keyboard navigation.",
+      "author": {"displayName": "QA Engineer"}
+    }
+  ]
+}

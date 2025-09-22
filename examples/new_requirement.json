@@ -1,0 +1,37 @@
+{
+  "key": "PROJ-123",
+  "summary": "Enable Editing of \"Occupation\", \"Country of Residence\" on User Profile",
+  "description": "Acceptance Criteria\n\nGiven the user is on the Profile tab,\nWhen they click the Edit button next to Occupation, Country of Residence,\nThen a dropdown should appear allowing them to select from a predefined list (same as used in onboarding).\n\nGiven the user selects a value from the Occupation, Country of Residence dropdown,\nWhen the selection is made,\nThen the new value should be saved to the database in real time.\n\nGiven that a user successfully updates either Occupation or Country of Residence,\nWhen the update completes,\nThen a Mixpanel event may be fired to track the change (optional / nice to have).\n\nFigma Design: https://www.figma.com/file/fnCxddHpd5tOcjYxzliAxc/Habitto-App-UI--Sprint-Execution?node-id=137944-173127",
+  "priority": {
+    "name": "High"
+  },
+  "assignee": {
+    "displayName": "Frontend Development Team"
+  },
+  "reporter": {
+    "displayName": "Product Manager"
+  },
+  "labels": ["frontend", "profile", "user-management", "ui/ux"],
+  "components": [
+    {
+      "name": "User Interface"
+    },
+    {
+      "name": "User Profile"
+    }
+  ],
+  "comments": [
+    {
+      "body": "Please ensure the profile editing works well on mobile devices. Users frequently access from smartphones.",
+      "author": {
+        "displayName": "UX Designer"
+      }
+    },
+    {
+      "body": "Consider adding accessibility features for screen readers and keyboard navigation.",
+      "author": {
+        "displayName": "QA Engineer"
+      }
+    }
+  ]
+}
