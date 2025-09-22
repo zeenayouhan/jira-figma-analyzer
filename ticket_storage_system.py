@@ -236,23 +236,23 @@ class TicketStorageSystem:
     
     def get_all_tickets(self, limit=50):
         try:
-        """Get all tickets with pagination."""
-        conn = sqlite3.connect(self.db_path)
-        cursor = conn.cursor()
-        
-        cursor.execute('''
-            SELECT id, ticket_id, title, description, created_at, updated_at
-            FROM tickets 
-            ORDER BY created_at DESC 
-            LIMIT ?
-        ''', (limit,))
-        
-        rows = cursor.fetchall()
-        conn.close()
-        
-        return [{
-            'id': row[0],
-            'ticket_key': row[1],
+            """Get all tickets with pagination."""
+            conn = sqlite3.connect(self.db_path)
+            cursor = conn.cursor()
+            
+            cursor.execute('''
+                SELECT id, ticket_id, title, description, created_at, updated_at
+                FROM tickets 
+                ORDER BY created_at DESC 
+                LIMIT ?
+            ''', (limit,))
+            
+            rows = cursor.fetchall()
+            conn.close()
+            
+            return [{
+                'id': row[0],
+                'ticket_key': row[1],
             'title': row[2],
             'description': row[3],
             'created_at': row[4],
