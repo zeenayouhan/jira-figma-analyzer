@@ -1,17 +1,23 @@
 #!/usr/bin/env python3
 """
-Minimal Streamlit app for testing
+Minimal test app for Railway deployment
 """
 
 import streamlit as st
 import os
 
-st.title("Minimal Test App")
-st.write("This is a minimal test app to verify Streamlit works.")
+def main():
+    st.title("🚀 Jira-Figma Analyzer - Test")
+    st.write("This is a minimal test to check if the app is working on Railway.")
+    
+    st.write(f"Port: {os.getenv('PORT', 'Not set')}")
+    st.write(f"Python version: {os.sys.version}")
+    
+    st.success("✅ App is running successfully!")
+    
+    # Test basic functionality
+    if st.button("Test Button"):
+        st.balloons()
 
-# Add a simple health check endpoint
-if st.button("Test Health Check"):
-    st.success("Health check passed!")
-
-st.write(f"Port: {os.getenv('PORT', '8501')}")
-st.write(f"Environment: {os.getenv('RAILWAY_ENVIRONMENT', 'local')}")
+if __name__ == "__main__":
+    main()

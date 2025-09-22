@@ -17,4 +17,4 @@ aptPkgs = [
 ]
 
 [start]
-cmd = "python start.py"
+cmd = "python test_start.py"
