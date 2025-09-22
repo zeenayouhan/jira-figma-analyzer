@@ -1,0 +1,87 @@
+[FE] Enhance the session history screen with a filter
+Update the session history screen to allow users to filter their past and upcoming sessions. Currently, all sessions are displayed in one list, making it harder for users to find specific types of sessions. The new filter tabs (すべて / 予約済 / 完了 / キャンセル) will improve usability by letting users view sessions by status (all, reserved, completed, canceled).
+
+Design
+
+ 
+
+Acceptance Criteria
+
+Filter Tabs Display
+
+Given the user is on the session history screen
+
+When the screen is displayed
+
+Then the filter tabs “すべて / 予約済 / 完了 / キャンセル” are visible above the session list
+
+Default State
+
+Given the user is on the session history screen
+
+When the screen is displayed for the first time
+
+Then the “すべて” (All) filter is selected by default and all sessions (予約済, 完了, キャンセル) are shown
+
+予約済 (Reserved) Filter
+
+Given the user is on the session history screen
+
+When the user selects the “予約済” filter
+
+Then only sessions with a reserved status are shown in the list
+
+完了 (Completed) Filter
+
+Given the user is on the session history screen
+
+When the user selects the “完了” filter
+
+Then only sessions with a completed status are shown in the list
+
+キャンセル (Canceled) Filter
+
+Given the user is on the session history screen
+
+When the user selects the “キャンセル” filter
+
+Then only sessions with a canceled status are shown in the list
+
+Tab State Change
+
+Given the user has selected a filter tab
+
+When the filter is applied
+
+Then the selected tab is highlighted and remains active until another tab is chosen
+
+No Sessions for Selected Filter
+
+Given the user is on the session history screen
+
+When the user selects a filter tab with no matching sessions
+
+Then an empty state message is displayed “該当するセッションはありません” and no session cards are shown: https://www.figma.com/design/fnCxddHpd5tOcjYxzliAxc/Habitto-App-UI--Sprint-Execution?node-id=144256-157301&t=w5U3lTdHqW5T6fgg-11 
+
+All Filters Empty
+
+Given the user is on the session history screen for the first time
+
+When the user has no session history at all
+
+Then the “すべて” filter is selected by default and the empty state message is displayed as implemented already
+
+Filter Persistence on Reselect
+
+Given the user has selected a filter tab (e.g., “キャンセル”)
+
+When the user reopens the session history screen during the same app session
+
+Then the previously selected filter remains active and its corresponding list is shown
+
+
+
+Figma Links:
+https://www.figma.com/design/fnCxddHpd5tOcjYxzliAxc/Habitto-App-UI--Sprint-Execution?m=dev
+Labels: 
+Components: 

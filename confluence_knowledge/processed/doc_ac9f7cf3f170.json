@@ -1,0 +1,62 @@
+{
+  "doc_id": "doc_ac9f7cf3f170",
+  "title": "CS Chat Response-110925-142404.pdf",
+  "content": "Text Generation: FA/CS Chat Response\nRelated Ticket: CP-833: As CS/FA agent, I want the AI to suggest responses when a chat me\nssage arrives in Flex/CPDONE\nDescription\nThe system should be smart enough to understand whether a text input from customer is\nFinancial Advisory or Customer Report related, and give helpful responses to custmers.\nThe system should be smart enough to give responses that is only relevant within the context of\nHabittoʼs business guideline and service description. \nThe system should response responsively “I donʼt know” when there is no relevant information\nin its knowledge base. No hallucination is allowed.\nThe system should consistently response in the same language as the input (99% Japanese),\nand same style as Habittoʼs CS and FA human agents.\nMethodology\nUsing Bedrock as the base platform for building agent, we will use “multi-agent collaboration” as\norchestration architecture for this task.\nFigma\nConnect your Figma account\nConnect your Figma account to collaborate on work across\nAtlassian products.Learn more about Smart Links.\nConnect to Figma\nKnowledge Base Considerations:\n1. Using Habitto FAQs as the main knowledge base for CS sub-agent.\na. Optionally crawl GMOA FAQs as sub knowledge base. However, this is proven to dilute the\nresponse of the agent and make it unable to prioritize which knowledge to use, thus\nproduce inaccurate responses.\n2. Using past chat conversation data related to financial advisory as main knowledge base for FA\nsub-agent.\na. Need more time and effort to clean twilio chat data as there is no reliable method to filter\nautomated messages and remove customer support related chat messages.\nFoundation Model Consideration\nWeʼll stick to Claude Sonet 3 for as base model for all agents. Why? Among the foundational\nmodels provided by Bedrock, Claude is most stable with Japanese text generation. \nSonet 3 is an older model, yet reliable enough to provide output with small context length. Lower\ncost is also an attractive point.\nPrompt Engineering Consideration\nWeʼll override  directly to customize the prompt template. This is to make\nsure that the tone and output format to be consistent with what we want. \nItʼs hard to produce the best prompt yet. We continue to find the best prompt by\nexperimentation and evaluation metrics.\nModel Evaluation\nLLM as a judge model evaluation is great for this job. \nCreating an eval dataset\nTBD\nEvaluation Job\nTBDorchestration template\n",
+  "url": "",
+  "space_key": "",
+  "page_id": "",
+  "created_date": "2025-09-11",
+  "updated_date": "",
+  "author": "",
+  "labels": [],
+  "parent_page": "",
+  "extracted_text": "Text Generation: FA/CS Chat Response\nRelated Ticket: CP-833: As CS/FA agent, I want the AI to suggest responses when a chat me\nssage arrives in Flex/CPDONE\nDescription\nThe system should be smart enough to understand whether a text input from customer is\nFinancial Advisory or Customer Report related, and give helpful responses to custmers.\nThe system should be smart enough to give responses that is only relevant within the context of\nHabittoʼs business guideline and service description.\nThe system should response responsively “I donʼt know” when there is no relevant information\nin its knowledge base. No hallucination is allowed.\nThe system should consistently response in the same language as the input (99% Japanese),\nand same style as Habittoʼs CS and FA human agents.\nMethodology\nUsing Bedrock as the base platform for building agent, we will use “multi-agent collaboration” as\norchestration architecture for this task.\nFigma\nConnect your Figma account\nConnect your Figma account to collaborate on work across\nAtlassian products.Learn more about Smart Links.\nConnect to Figma\nKnowledge Base Considerations:\n1. Using Habitto FAQs as the main knowledge base for CS sub-agent.\na. Optionally crawl GMOA FAQs as sub knowledge base. However, this is proven to dilute the\nresponse of the agent and make it unable to prioritize which knowledge to use, thus\nproduce inaccurate responses.\n2. Using past chat conversation data related to financial advisory as main knowledge base for FA\nsub-agent.\na. Need more time and effort to clean twilio chat data as there is no reliable method to filter\nautomated messages and remove customer support related chat messages.\nFoundation Model Consideration\nWeʼll stick to Claude Sonet 3 for as base model for all agents. Why? Among the foundational\nmodels provided by Bedrock, Claude is most stable with Japanese text generation.\nSonet 3 is an older model, yet reliable enough to provide output with small context length. Lower\ncost is also an attractive point.\nPrompt Engineering Consideration\nWeʼll override directly to customize the prompt template. This is to make\nsure that the tone and output format to be consistent with what we want.\nItʼs hard to produce the best prompt yet. We continue to find the best prompt by\nexperimentation and evaluation metrics.\nModel Evaluation\nLLM as a judge model evaluation is great for this job.\nCreating an eval dataset\nTBD\nEvaluation Job\nTBDorchestration template",
+  "headings": [
+    "Knowledge Base Considerations",
+    "TBD",
+    "TBDorchestration template"
+  ],
+  "code_blocks": [],
+  "links": [],
+  "images": [],
+  "tables": [],
+  "tech_stack_mentions": [
+    "Financial Advisory",
+    "Financial Advisory",
+    "Filter"
+  ],
+  "api_endpoints": [],
+  "component_names": [
+    "Main",
+    "Base",
+    "Considerations",
+    "TBDorchestration",
+    "Report",
+    "Account",
+    "Filter",
+    "Remove",
+    "Knowledge"
+  ],
+  "feature_descriptions": [
+    "The system should be smart enough to give responses that is only relevant within the context of Habittoʼs business guideline and service description",
+    "The system should response responsively “I donʼt know” when there is no relevant information in its knowledge base",
+    "The system should consistently response in the same language as the input (99% Japanese), and same style as Habittoʼs CS and FA human agents",
+    "Using past chat conversation data related to financial advisory as main knowledge base for FA sub-agent",
+    "Knowledge Base Considerations",
+    "TBDorchestration template",
+    "Using Habitto FAQs as the main knowledge base for CS sub-agent.",
+    "Optionally crawl GMOA FAQs as sub knowledge base. However, this is proven to dilute the",
+    "Using past chat conversation data related to financial advisory as main knowledge base for FA",
+    "Need more time and effort to clean twilio chat data as there is no reliable method to filter"
+  ],
+  "business_rules": [
+    "should consistently response in the same language as the input (99% Japanese),\nand same style as Habittoʼs CS and FA human agents.",
+    "should response responsively “I donʼt know” when there is no relevant information\nin its knowledge base.",
+    "should be smart enough to give responses that is only relevant within the context of\nHabittoʼs business guideline and service description.",
+    "should be smart enough to understand whether a text input from customer is\nFinancial Advisory or Customer Report related, and give helpful responses to custmers.",
+    "only relevant within the context of\nHabittoʼs business guideline and service description."
+  ],
+  "processing_date": "2025-09-11T20:02:10.791137",
+  "word_count": 387,
+  "relevance_score": 64.74000000000001
+}

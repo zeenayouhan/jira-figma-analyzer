@@ -1,0 +1,298 @@
+#!/usr/bin/env python3
+"""
+Simple ticket storage system for the Jira-Figma Analyzer.
+"""
+
+import json
+import os
+from datetime import datetime
+from typing import List, Dict, Any, Optional
+import sqlite3
+import pickle
+
+class TicketStorageSystem:
+    """Simple storage system for tickets and analysis results."""
+    
+    def __init__(self, storage_dir: str = "ticket_storage"):
+        self.storage_dir = storage_dir
+        self.db_path = os.path.join(storage_dir, "database", "tickets.db")
+        self.index_path = os.path.join(storage_dir, "database", "search_index.pkl")
+        
+        # Create directories if they don't exist
+        os.makedirs(os.path.join(storage_dir, "database"), exist_ok=True)
+        os.makedirs(os.path.join(storage_dir, "files"), exist_ok=True)
+        
+        # Initialize database
+        self._init_database()
+        
+        # Initialize search index
+        self.search_index = self._load_search_index()
+    
+    def _init_database(self):
+        """Initialize SQLite database for ticket storage."""
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+        
+        # Create tickets table
+        cursor.execute('''
+            CREATE TABLE IF NOT EXISTS tickets (
+                id TEXT PRIMARY KEY,
+                ticket_key TEXT,
+                title TEXT,
+                description TEXT,
+                created_at TIMESTAMP,
+                updated_at TIMESTAMP,
+                analysis_data TEXT
+            )
+        ''')
+        
+        # Create questions table
+        cursor.execute('''
+            CREATE TABLE IF NOT EXISTS questions (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                ticket_id TEXT,
+                question TEXT,
+                category TEXT,
+                FOREIGN KEY (ticket_id) REFERENCES tickets (id)
+            )
+        ''')
+        
+        # Create test_cases table
+        cursor.execute('''
+            CREATE TABLE IF NOT EXISTS test_cases (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                ticket_id TEXT,
+                test_case TEXT,
+                category TEXT,
+                FOREIGN KEY (ticket_id) REFERENCES tickets (id)
+            )
+        ''')
+        
+        conn.commit()
+        conn.close()
+    
+    def _load_search_index(self) -> Dict:
+        """Load search index from pickle file."""
+        if os.path.exists(self.index_path):
+            try:
+                with open(self.index_path, 'rb') as f:
+                    return pickle.load(f)
+            except:
+                pass
+        return {}
+    
+    def _save_search_index(self):
+        """Save search index to pickle file."""
+        with open(self.index_path, 'wb') as f:
+            pickle.dump(self.search_index, f)
+    
+    def store_ticket(self, ticket_data: Dict[str, Any]) -> str:
+        """Store a ticket and its analysis data."""
+        ticket_id = ticket_data.get('id', f"ticket_{datetime.now().strftime('%Y%m%d_%H%M%S')}")
+        
+        # Store in database
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+        
+        cursor.execute('''
+            INSERT OR REPLACE INTO tickets 
+            (ticket_id, ticket_key, title, description, created_at, updated_at, analysis_data)
+            VALUES (?, ?, ?, ?, ?, ?, ?)
+        ''', (
+            ticket_id,
+            ticket_id,
+            ticket_data.get('title', ''),
+            ticket_data.get('description', ''),
+            datetime.now().isoformat(),
+            datetime.now().isoformat(),
+            json.dumps(ticket_data.get('analysis', {}))
+        ))
+        
+        # Store questions
+        questions = ticket_data.get('questions', [])
+        for question in questions:
+            cursor.execute('''
+                INSERT INTO questions (ticket_id, question_text, question_type)
+                VALUES (?, ?, ?)
+            ''', (ticket_id, question, "general"))
+        
+        # Store test cases
+        test_cases = ticket_data.get('test_cases', [])
+        for test_case in test_cases:
+            cursor.execute('''
+                INSERT INTO test_cases (ticket_id, test_case_text)
+                VALUES (?, ?)
+            ''', (ticket_id, test_case))
+        
+        conn.commit()
+        conn.close()
+        
+        # Update search index
+        self.search_index[ticket_id] = {
+            'title': ticket_data.get('title', ''),
+            'description': ticket_data.get('description', ''),
+            'ticket_key': ticket_id,
+            'created_at': datetime.now().isoformat()
+        }
+        self._save_search_index()
+        
+        return ticket_id
+    
+    def get_ticket(self, ticket_id: str) -> Optional[Dict[str, Any]]:
+        """Get a ticket by ID."""
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+        
+        cursor.execute('SELECT * FROM tickets WHERE id = ?', (ticket_id,))
+        row = cursor.fetchone()
+        
+        if not row:
+            conn.close()
+            return None
+        
+        # Get questions
+        cursor.execute('SELECT question FROM questions WHERE ticket_id = ?', (ticket_id,))
+        questions = [row[0] for row in cursor.fetchall()]
+        
+        # Get test cases
+        cursor.execute('SELECT test_case FROM test_cases WHERE ticket_id = ?', (ticket_id,))
+        test_cases = [row[0] for row in cursor.fetchall()]
+        
+        conn.close()
+        
+        return {
+            'id': row[0],
+            'ticket_key': row[1],
+            'title': row[2],
+            'description': row[3],
+            'created_at': row[4],
+            'updated_at': row[5],
+            'analysis': json.loads(row[6]) if row[6] else {},
+            'questions': questions,
+            'test_cases': test_cases
+        }
+    
+    def search_tickets(self, query: str, limit: int = 10) -> List[Dict[str, Any]]:
+        """Search tickets by query."""
+        results = []
+        query_lower = query.lower()
+        
+        for ticket_id, data in self.search_index.items():
+            if (query_lower in data['title'].lower() or 
+                query_lower in data['description'].lower() or 
+                query_lower in data['ticket_key'].lower()):
+                results.append({
+                    'ticket_id': ticket_id,
+                    'ticket_key': data['ticket_key'],
+                    'title': data['title'],
+                    'created_at': data['created_at']
+                })
+        
+        return results[:limit]
+    
+    def search_figma_tickets(self, limit: int = 10) -> List[Dict[str, Any]]:
+        """Search for tickets with Figma designs."""
+        # This is a simplified version - in a real implementation,
+        # you'd search for tickets that have Figma links
+        return self.search_tickets("figma", limit)
+    
+    def get_statistics(self) -> Dict[str, Any]:
+        """Get storage statistics."""
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+        
+        # Count tickets
+        cursor.execute('SELECT COUNT(*) FROM tickets')
+        ticket_count = cursor.fetchone()[0]
+        
+        # Count questions
+        cursor.execute('SELECT COUNT(*) FROM questions')
+        question_count = cursor.fetchone()[0]
+        
+        # Count test cases
+        cursor.execute('SELECT COUNT(*) FROM test_cases')
+        test_case_count = cursor.fetchone()[0]
+        
+        conn.close()
+        
+        return {
+            'total_tickets': ticket_count,
+            'total_questions': question_count,
+            'total_test_cases': test_case_count,
+            'total_risks': 0,  # Mock data - would need risks table
+            'total_screens': 0,  # Mock data - would need screens table
+            'storage_size': self._get_storage_size()
+        }
+    
+    def _get_storage_size(self) -> int:
+        """Get total storage size in bytes."""
+        total_size = 0
+        for root, dirs, files in os.walk(self.storage_dir):
+            for file in files:
+                file_path = os.path.join(root, file)
+                if os.path.exists(file_path):
+                    total_size += os.path.getsize(file_path)
+        return total_size
+    
+    def get_all_tickets(self, limit: int = 100) -> List[Dict[str, Any]]:
+        """Get all tickets with pagination."""
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+        
+        cursor.execute('''
+            SELECT id, ticket_id, title, description, created_at, updated_at
+            FROM tickets 
+            ORDER BY created_at DESC 
+            LIMIT ?
+        ''', (limit,))
+        
+        rows = cursor.fetchall()
+        conn.close()
+        
+        return [{
+            'id': row[0],
+            'ticket_key': row[1],
+            'title': row[2],
+            'description': row[3],
+            'created_at': row[4],
+            'updated_at': row[5]
+        } for row in rows]
+
+    def get_recent_tickets(self, limit: int = 5) -> List[Dict[str, Any]]:
+        """Get recent tickets (same as get_all_tickets but with default limit of 5)."""
+        return self.get_all_tickets(limit=limit)
+
+    def get_tickets_timeline(self) -> List[Dict[str, Any]]:
+        """Get tickets timeline data for charts."""
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+        
+        cursor.execute('''
+            SELECT DATE(created_at) as date, COUNT(*) as count
+            FROM tickets 
+            GROUP BY DATE(created_at)
+            ORDER BY date
+        ''')
+        
+        rows = cursor.fetchall()
+        conn.close()
+        
+        return [{'date': row[0], 'count': row[1]} for row in rows]
+    
+    def get_priority_distribution(self) -> List[Dict[str, Any]]:
+        """Get priority distribution data for charts."""
+        # Mock data since we don't have priority field yet
+        return [
+            {'priority': 'High', 'count': 5},
+            {'priority': 'Medium', 'count': 12},
+            {'priority': 'Low', 'count': 8}
+        ]
+    
+    def get_complexity_distribution(self) -> List[Dict[str, Any]]:
+        """Get complexity distribution data for charts."""
+        # Mock data since we don't have complexity field yet
+        return [
+            {'complexity': 'Simple', 'count': 10},
+            {'complexity': 'Medium', 'count': 12},
+            {'complexity': 'Complex', 'count': 3}
+        ]

@@ -1,0 +1,7 @@
+MONEY HABITs
+Implement this
+
+Figma Links:
+https://www.figma.com/design/fnCxddHpd5tOcjYxzliAxc/Habitto-App-UI--Sprint-Execution?node-id=119622-40&p=f&t=G6OGD3qKNUIz1Aai-0
+Labels: 
+Components: 

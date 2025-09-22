@@ -1,0 +1,1422 @@
+{
+  "tech_stack": {
+    "React": {
+      "count": 8,
+      "documents": [
+        "doc_e63fb62fa86c",
+        "doc_f16372d09155"
+      ]
+    },
+    "Mixpanel": {
+      "count": 16,
+      "documents": [
+        "doc_e63fb62fa86c",
+        "doc_ab2bea2668f2"
+      ]
+    },
+    "Express": {
+      "count": 22,
+      "documents": [
+        "doc_18b25abd43a0",
+        "doc_922f45e16a13"
+      ]
+    },
+    "Calendar": {
+      "count": 68,
+      "documents": [
+        "doc_922f45e16a13",
+        "doc_18b25abd43a0",
+        "doc_e63fb62fa86c"
+      ]
+    },
+    "Profile": {
+      "count": 17,
+      "documents": [
+        "doc_922f45e16a13",
+        "doc_18b25abd43a0",
+        "doc_c3ce89f17fb3",
+        "doc_5060a75d69fe"
+      ]
+    },
+    "Schedule": {
+      "count": 53,
+      "documents": [
+        "doc_922f45e16a13",
+        "doc_18b25abd43a0",
+        "doc_e63fb62fa86c",
+        "doc_9723522b1dd5"
+      ]
+    },
+    "Biometric": {
+      "count": 13,
+      "documents": [
+        "doc_922f45e16a13",
+        "doc_18b25abd43a0",
+        "doc_f16372d09155"
+      ]
+    },
+    "Advisor": {
+      "count": 412,
+      "documents": [
+        "doc_922f45e16a13",
+        "doc_18b25abd43a0",
+        "doc_e63fb62fa86c",
+        "doc_9723522b1dd5",
+        "doc_7b00f8177767",
+        "doc_f16372d09155",
+        "doc_c3ce89f17fb3",
+        "doc_5060a75d69fe"
+      ]
+    },
+    "Financial Advisory": {
+      "count": 88,
+      "documents": [
+        "doc_922f45e16a13",
+        "doc_18b25abd43a0",
+        "doc_ac9f7cf3f170",
+        "doc_7b00f8177767",
+        "doc_5060a75d69fe"
+      ]
+    },
+    "Dashboard": {
+      "count": 27,
+      "documents": [
+        "doc_922f45e16a13",
+        "doc_18b25abd43a0",
+        "doc_f16372d09155",
+        "doc_ab2bea2668f2"
+      ]
+    },
+    "CloudFront": {
+      "count": 20,
+      "documents": [
+        "doc_18b25abd43a0",
+        "doc_5060a75d69fe"
+      ]
+    },
+    "Notifications": {
+      "count": 21,
+      "documents": [
+        "doc_18b25abd43a0",
+        "doc_7b00f8177767",
+        "doc_f16372d09155",
+        "doc_5060a75d69fe"
+      ]
+    },
+    "Meeting": {
+      "count": 3,
+      "documents": [
+        "doc_e63fb62fa86c",
+        "doc_ab2bea2668f2"
+      ]
+    },
+    "Authentication": {
+      "count": 5,
+      "documents": [
+        "doc_e63fb62fa86c",
+        "doc_f16372d09155"
+      ]
+    },
+    "Settings": {
+      "count": 17,
+      "documents": [
+        "doc_e63fb62fa86c",
+        "doc_f16372d09155",
+        "doc_ab2bea2668f2"
+      ]
+    },
+    "Appointment": {
+      "count": 6,
+      "documents": [
+        "doc_e63fb62fa86c"
+      ]
+    },
+    "2FA": {
+      "count": 1,
+      "documents": [
+        "doc_9723522b1dd5"
+      ]
+    },
+    "Node.js": {
+      "count": 2,
+      "documents": [
+        "doc_a59cc8c325f6"
+      ]
+    },
+    "Lambda": {
+      "count": 1,
+      "documents": [
+        "doc_a59cc8c325f6"
+      ]
+    },
+    "AWS": {
+      "count": 2,
+      "documents": [
+        "doc_a59cc8c325f6",
+        "doc_5060a75d69fe"
+      ]
+    },
+    "SDK": {
+      "count": 2,
+      "documents": [
+        "doc_a59cc8c325f6"
+      ]
+    },
+    "Filter": {
+      "count": 2,
+      "documents": [
+        "doc_ac9f7cf3f170",
+        "doc_f16372d09155"
+      ]
+    },
+    "Analytics": {
+      "count": 30,
+      "documents": [
+        "doc_7b00f8177767",
+        "doc_f16372d09155"
+      ]
+    },
+    "Search": {
+      "count": 3,
+      "documents": [
+        "doc_7b00f8177767"
+      ]
+    },
+    "Compliance": {
+      "count": 7,
+      "documents": [
+        "doc_7b00f8177767",
+        "doc_f16372d09155",
+        "doc_5060a75d69fe"
+      ]
+    },
+    "Encryption": {
+      "count": 3,
+      "documents": [
+        "doc_7b00f8177767"
+      ]
+    },
+    "Android": {
+      "count": 10,
+      "documents": [
+        "doc_f16372d09155",
+        "doc_ab2bea2668f2"
+      ]
+    },
+    "Secure Storage": {
+      "count": 1,
+      "documents": [
+        "doc_f16372d09155"
+      ]
+    },
+    "Investment": {
+      "count": 12,
+      "documents": [
+        "doc_f16372d09155",
+        "doc_c3ce89f17fb3"
+      ]
+    },
+    "KYC": {
+      "count": 3,
+      "documents": [
+        "doc_f16372d09155",
+        "doc_5060a75d69fe"
+      ]
+    },
+    "CodePush": {
+      "count": 2,
+      "documents": [
+        "doc_f16372d09155",
+        "doc_ab2bea2668f2"
+      ]
+    },
+    "GraphQL": {
+      "count": 1,
+      "documents": [
+        "doc_f16372d09155"
+      ]
+    },
+    "iOS": {
+      "count": 11,
+      "documents": [
+        "doc_f16372d09155",
+        "doc_ab2bea2668f2"
+      ]
+    },
+    "Redux": {
+      "count": 1,
+      "documents": [
+        "doc_f16372d09155"
+      ]
+    },
+    "Financial Planning": {
+      "count": 1,
+      "documents": [
+        "doc_c3ce89f17fb3"
+      ]
+    }
+  },
+  "components": {
+    "Register": {
+      "documents": [
+        "doc_922f45e16a13",
+        "doc_18b25abd43a0",
+        "doc_5060a75d69fe"
+      ],
+      "description": ""
+    },
+    "Login": {
+      "documents": [
+        "doc_922f45e16a13",
+        "doc_18b25abd43a0",
+        "doc_5060a75d69fe"
+      ],
+      "description": ""
+    },
+    "Update": {
+      "documents": [
+        "doc_922f45e16a13",
+        "doc_e63fb62fa86c",
+        "doc_f16372d09155",
+        "doc_ab2bea2668f2"
+      ],
+      "description": ""
+    },
+    "Insurance": {
+      "documents": [
+        "doc_922f45e16a13"
+      ],
+      "description": ""
+    },
+    "Account": {
+      "documents": [
+        "doc_922f45e16a13",
+        "doc_18b25abd43a0",
+        "doc_e63fb62fa86c",
+        "doc_9723522b1dd5",
+        "doc_ac9f7cf3f170",
+        "doc_7b00f8177767",
+        "doc_f16372d09155",
+        "doc_c3ce89f17fb3",
+        "doc_ab2bea2668f2",
+        "doc_5060a75d69fe"
+      ],
+      "description": ""
+    },
+    "Assessment": {
+      "documents": [
+        "doc_922f45e16a13",
+        "doc_18b25abd43a0",
+        "doc_7b00f8177767"
+      ],
+      "description": ""
+    },
+    "Calendar": {
+      "documents": [
+        "doc_922f45e16a13",
+        "doc_18b25abd43a0",
+        "doc_e63fb62fa86c"
+      ],
+      "description": ""
+    },
+    "Profile": {
+      "documents": [
+        "doc_922f45e16a13",
+        "doc_18b25abd43a0",
+        "doc_c3ce89f17fb3",
+        "doc_5060a75d69fe"
+      ],
+      "description": ""
+    },
+    "Schedule": {
+      "documents": [
+        "doc_922f45e16a13",
+        "doc_18b25abd43a0",
+        "doc_e63fb62fa86c",
+        "doc_9723522b1dd5"
+      ],
+      "description": ""
+    },
+    "NON-LINEAR": {
+      "documents": [
+        "doc_922f45e16a13",
+        "doc_18b25abd43a0"
+      ],
+      "description": ""
+    },
+    "Advisor": {
+      "documents": [
+        "doc_922f45e16a13",
+        "doc_18b25abd43a0",
+        "doc_e63fb62fa86c",
+        "doc_9723522b1dd5",
+        "doc_7b00f8177767",
+        "doc_f16372d09155",
+        "doc_c3ce89f17fb3",
+        "doc_5060a75d69fe"
+      ],
+      "description": ""
+    },
+    "Home": {
+      "documents": [
+        "doc_922f45e16a13",
+        "doc_18b25abd43a0",
+        "doc_f16372d09155",
+        "doc_5060a75d69fe"
+      ],
+      "description": ""
+    },
+    "Add": {
+      "documents": [
+        "doc_922f45e16a13"
+      ],
+      "description": ""
+    },
+    "Dashboard": {
+      "documents": [
+        "doc_922f45e16a13",
+        "doc_18b25abd43a0",
+        "doc_f16372d09155",
+        "doc_ab2bea2668f2"
+      ],
+      "description": ""
+    },
+    "After": {
+      "documents": [
+        "doc_18b25abd43a0"
+      ],
+      "description": ""
+    },
+    "Survey": {
+      "documents": [
+        "doc_18b25abd43a0"
+      ],
+      "description": ""
+    },
+    "SessionMultiple": {
+      "documents": [
+        "doc_18b25abd43a0"
+      ],
+      "description": ""
+    },
+    "ADVISO…": {
+      "documents": [
+        "doc_18b25abd43a0"
+      ],
+      "description": ""
+    },
+    "Verification": {
+      "documents": [
+        "doc_18b25abd43a0",
+        "doc_5060a75d69fe"
+      ],
+      "description": ""
+    },
+    "Session”": {
+      "documents": [
+        "doc_18b25abd43a0"
+      ],
+      "description": ""
+    },
+    "ERROR": {
+      "documents": [
+        "doc_18b25abd43a0",
+        "doc_5060a75d69fe"
+      ],
+      "description": ""
+    },
+    "Sentiment": {
+      "documents": [
+        "doc_18b25abd43a0"
+      ],
+      "description": ""
+    },
+    "Before": {
+      "documents": [
+        "doc_18b25abd43a0"
+      ],
+      "description": ""
+    },
+    "SessionCustomer": {
+      "documents": [
+        "doc_18b25abd43a0"
+      ],
+      "description": ""
+    },
+    "Immediately": {
+      "documents": [
+        "doc_18b25abd43a0"
+      ],
+      "description": ""
+    },
+    "Financial": {
+      "documents": [
+        "doc_18b25abd43a0"
+      ],
+      "description": ""
+    },
+    "Advisory": {
+      "documents": [
+        "doc_18b25abd43a0"
+      ],
+      "description": ""
+    },
+    "However,": {
+      "documents": [
+        "doc_e63fb62fa86c"
+      ],
+      "description": ""
+    },
+    "Meeting": {
+      "documents": [
+        "doc_e63fb62fa86c",
+        "doc_ab2bea2668f2"
+      ],
+      "description": ""
+    },
+    "Authentication": {
+      "documents": [
+        "doc_e63fb62fa86c",
+        "doc_f16372d09155"
+      ],
+      "description": ""
+    },
+    "Delete": {
+      "documents": [
+        "doc_e63fb62fa86c"
+      ],
+      "description": ""
+    },
+    "Settings": {
+      "documents": [
+        "doc_e63fb62fa86c",
+        "doc_f16372d09155",
+        "doc_ab2bea2668f2"
+      ],
+      "description": ""
+    },
+    "Session": {
+      "documents": [
+        "doc_e63fb62fa86c"
+      ],
+      "description": ""
+    },
+    "Google": {
+      "documents": [
+        "doc_e63fb62fa86c"
+      ],
+      "description": ""
+    },
+    "Other": {
+      "documents": [
+        "doc_e63fb62fa86c"
+      ],
+      "description": ""
+    },
+    "Mixpanel": {
+      "documents": [
+        "doc_e63fb62fa86c",
+        "doc_ab2bea2668f2"
+      ],
+      "description": ""
+    },
+    "Create": {
+      "documents": [
+        "doc_e63fb62fa86c",
+        "doc_7b00f8177767",
+        "doc_f16372d09155",
+        "doc_5060a75d69fe"
+      ],
+      "description": ""
+    },
+    "Jira": {
+      "documents": [
+        "doc_e63fb62fa86c"
+      ],
+      "description": ""
+    },
+    "Appointment": {
+      "documents": [
+        "doc_e63fb62fa86c"
+      ],
+      "description": ""
+    },
+    "AI/DATAIN": {
+      "documents": [
+        "doc_9723522b1dd5"
+      ],
+      "description": ""
+    },
+    "DONETrackActivity": {
+      "documents": [
+        "doc_9723522b1dd5"
+      ],
+      "description": ""
+    },
+    "TECHNICAL": {
+      "documents": [
+        "doc_9723522b1dd5"
+      ],
+      "description": ""
+    },
+    "PROGRESS": {
+      "documents": [
+        "doc_9723522b1dd5"
+      ],
+      "description": ""
+    },
+    "StatusReferences": {
+      "documents": [
+        "doc_9723522b1dd5"
+      ],
+      "description": ""
+    },
+    "STARTED": {
+      "documents": [
+        "doc_9723522b1dd5"
+      ],
+      "description": ""
+    },
+    "UI/UX": {
+      "documents": [
+        "doc_9723522b1dd5"
+      ],
+      "description": ""
+    },
+    "Main": {
+      "documents": [
+        "doc_a59cc8c325f6",
+        "doc_ac9f7cf3f170",
+        "doc_f16372d09155"
+      ],
+      "description": ""
+    },
+    "Finance": {
+      "documents": [
+        "doc_a59cc8c325f6"
+      ],
+      "description": ""
+    },
+    "Conversational": {
+      "documents": [
+        "doc_a59cc8c325f6"
+      ],
+      "description": ""
+    },
+    "DescriptionSolution": {
+      "documents": [
+        "doc_a59cc8c325f6"
+      ],
+      "description": ""
+    },
+    "LiveKit": {
+      "documents": [
+        "doc_a59cc8c325f6"
+      ],
+      "description": ""
+    },
+    "Decisions": {
+      "documents": [
+        "doc_a59cc8c325f6"
+      ],
+      "description": ""
+    },
+    "Considerations": {
+      "documents": [
+        "doc_ac9f7cf3f170"
+      ],
+      "description": ""
+    },
+    "Base": {
+      "documents": [
+        "doc_ac9f7cf3f170"
+      ],
+      "description": ""
+    },
+    "TBDorchestration": {
+      "documents": [
+        "doc_ac9f7cf3f170"
+      ],
+      "description": ""
+    },
+    "Report": {
+      "documents": [
+        "doc_ac9f7cf3f170",
+        "doc_f16372d09155"
+      ],
+      "description": ""
+    },
+    "Filter": {
+      "documents": [
+        "doc_ac9f7cf3f170",
+        "doc_f16372d09155"
+      ],
+      "description": ""
+    },
+    "Remove": {
+      "documents": [
+        "doc_ac9f7cf3f170",
+        "doc_f16372d09155"
+      ],
+      "description": ""
+    },
+    "Knowledge": {
+      "documents": [
+        "doc_ac9f7cf3f170"
+      ],
+      "description": ""
+    },
+    "Document": {
+      "documents": [
+        "doc_7b00f8177767",
+        "doc_ab2bea2668f2",
+        "doc_5060a75d69fe"
+      ],
+      "description": ""
+    },
+    "YET?": {
+      "documents": [
+        "doc_7b00f8177767"
+      ],
+      "description": ""
+    },
+    "Compliance": {
+      "documents": [
+        "doc_7b00f8177767",
+        "doc_f16372d09155",
+        "doc_5060a75d69fe"
+      ],
+      "description": ""
+    },
+    "Search": {
+      "documents": [
+        "doc_7b00f8177767"
+      ],
+      "description": ""
+    },
+    "useForegroundApplockHook": {
+      "documents": [
+        "doc_f16372d09155"
+      ],
+      "description": ""
+    },
+    "Foreground": {
+      "documents": [
+        "doc_f16372d09155"
+      ],
+      "description": ""
+    },
+    "useEffect": {
+      "documents": [
+        "doc_f16372d09155"
+      ],
+      "description": ""
+    },
+    "Notification": {
+      "documents": [
+        "doc_f16372d09155"
+      ],
+      "description": ""
+    },
+    "PermissionRequestModal": {
+      "documents": [
+        "doc_f16372d09155"
+      ],
+      "description": ""
+    },
+    "InteractionManager": {
+      "documents": [
+        "doc_f16372d09155"
+      ],
+      "description": ""
+    },
+    "Resume": {
+      "documents": [
+        "doc_f16372d09155"
+      ],
+      "description": ""
+    },
+    "Investment": {
+      "documents": [
+        "doc_f16372d09155",
+        "doc_c3ce89f17fb3"
+      ],
+      "description": ""
+    },
+    "Toggle": {
+      "documents": [
+        "doc_f16372d09155"
+      ],
+      "description": ""
+    },
+    "First-time": {
+      "documents": [
+        "doc_f16372d09155"
+      ],
+      "description": ""
+    },
+    "Empty": {
+      "documents": [
+        "doc_f16372d09155"
+      ],
+      "description": ""
+    },
+    "DateHandler": {
+      "documents": [
+        "doc_f16372d09155"
+      ],
+      "description": ""
+    },
+    "SessionPicker": {
+      "documents": [
+        "doc_f16372d09155"
+      ],
+      "description": ""
+    },
+    "Auth": {
+      "documents": [
+        "doc_f16372d09155"
+      ],
+      "description": ""
+    },
+    "useMemo": {
+      "documents": [
+        "doc_f16372d09155"
+      ],
+      "description": ""
+    },
+    "Kyc": {
+      "documents": [
+        "doc_f16372d09155",
+        "doc_5060a75d69fe"
+      ],
+      "description": ""
+    },
+    "Charge": {
+      "documents": [
+        "doc_c3ce89f17fb3"
+      ],
+      "description": ""
+    },
+    "Risk": {
+      "documents": [
+        "doc_c3ce89f17fb3"
+      ],
+      "description": ""
+    },
+    "Amaral": {
+      "documents": [
+        "doc_ab2bea2668f2"
+      ],
+      "description": ""
+    },
+    "Adjust-based": {
+      "documents": [
+        "doc_ab2bea2668f2"
+      ],
+      "description": ""
+    },
+    "Bose": {
+      "documents": [
+        "doc_ab2bea2668f2"
+      ],
+      "description": ""
+    },
+    "Note": {
+      "documents": [
+        "doc_ab2bea2668f2"
+      ],
+      "description": ""
+    },
+    "Current": {
+      "documents": [
+        "doc_ab2bea2668f2"
+      ],
+      "description": ""
+    },
+    "Field": {
+      "documents": [
+        "doc_5060a75d69fe"
+      ],
+      "description": ""
+    },
+    "Vfnn5IzAOOMEdggCrKbMvnESlV7C9V4lINK2zxB4Uul9nMhuvoSaXA==": {
+      "documents": [
+        "doc_5060a75d69fe"
+      ],
+      "description": ""
+    },
+    "Request": {
+      "documents": [
+        "doc_5060a75d69fe"
+      ],
+      "description": ""
+    },
+    "Flow": {
+      "documents": [
+        "doc_5060a75d69fe"
+      ],
+      "description": ""
+    }
+  },
+  "features": [
+    "create\ncentralized\nwork schedule\nmanager for\nadvisors (can\nbe useful for\nFlex routing as\nwell)\nWith the\ncombination of\nthe above and\nfreeBusy API\navailable time\ncan be\ndetermined\nThe rest is\nsame as option\nPros and cons\nsimple implementation,\nstraightforward logic\nflexibility for advisors to\ncreate slots whenever\nthey want\nless work for advisors to\ncreate manual entries in\nGoogle calendar, but still\nsome\nadvisor\nschedule\ncentrally\nmanaged and\ncan be reused\nno additional\nwork for1",
+    "Both Jira Service Management (SLA calendar) and Google calendar\nhave these features but they are not available via API\n- Google: Google Calendar API to get the working hours data from google calendar settings\n- Jira SM:\nOther options:\n- Puzzel and Twilio integration Integrate Flex with Puzzel WFM | Twilio\n- Alvario with Twilio integration Integrate Flex with Alvaria WFM | Twilio\n- RETOOL: Retool | Calendar booking toolDocumentation | FullCalendar\nPossible Retool-centered designed is described in this Figma file\nSession booking flow proposal\n- calendar",
+    "create\ncentralized\nwork schedule\nmanager for\nadvisors (can\nbe useful for\nFlex routing as\nwell)\nWith the\ncombination of\nthe above and\nfreeBusy API\navailable time\ncan be\ndetermined\nThe rest is\nsame as option\nPros and cons\nsimple implementation,\nstraightforward logic\nflexibility for advisors to\ncreate slots whenever\nthey want\nless work for advisors to\ncreate manual entries in\nGoogle calendar, but still\nsome\nadvisor\nschedule\ncentrally\nmanaged and\ncan be reused\nno additional\nwork for1",
+    "Both Jira Service Management (SLA calendar) and Google calendar\nhave these features but they are not available via API\n- Google: Google Calendar API to get the working hours data from google calendar settings\n- Jira SM:\nOther options:\n- Puzzel and Twilio integration Integrate Flex with Puzzel WFM | Twilio\n- Alvario with Twilio integration Integrate Flex with Alvaria WFM | Twilio\n- RETOOL: Retool | Calendar booking toolDocumentation | FullCalendar\nPossible Retool-centered designed is described in this Figma file\nSession booking flow proposal\n- calendar",
+    "Financial Advisory Experience Flow v1\nExecutive Summary\nThis is the internally aligned version of an experience flow for for financial advisory, meant to be used for action by the\nproduct, data, tech and CSA/FA teams",
+    "Money Coaching Lane\nEnd-to-end Experience FlowThis program documentation is aligned with Soft Launch milestone",
+    "Interns\nRead this as a sequential timeline from top to bottom\nItems described in the same row happen simultaneously\n1Start of the experience flow\n2Prospect views our website CSA logs on to the Contact CenterHabitto Advisor logs on to the Contact\nCenter\n3Prospect installs the app\n4Prospect starts the PLATFORM REGISTRATION\nstage\n5Prospect gives consent for\ncommunication via email and mobile\nnumber (SMS and calls) provided\nduring PLATFORM REGISTRATION stage\nProspect becomes a User\n7User answers additional demographic\nquestions in the BASIC PROFILING stage\n8User is shown the GMO/A\nintermediation information and\naccepts it\n9User is pushed out to GMO/A web\ncontent inside our app view\n10User applies for a GMO/A account and\ncardCSA monitors a Contact Center-\nhosted dashboard of individuals that\nhave started account application\nBUT did not submit it, emails and/or\nvoice calls from within Flex if needed\n11User receives an email link and goes\nthrough eKYC processCSA monitors a Contact Center-\nhosted dashboard of individuals that\nare stuck in eKYC, emails and/or\nvoice calls from within Flex people if\nneeded\n12User receives an email and activates\nthe GMO/A account at their portalCSA monitors a Contact-Center\nhosted dashboard of individuals that\nhave not activated account, emails\nand/or voice calls from within Flex if\nneeded\nUserʼs registration funnel is\ncompleteProspect/User/Customer\nUp to 10",
+    "(this content is pre-provided) (this content is pre-provided)\nUser reads the first in-app chat\nmessages from Habitto Advisor,\nwatches the Introduction Video, but is\nnot able to reply because the initial\nmoney top up is not completed(automated flow)\nHabitto Advisor introduction chat\nmessages are pushed to chat, along\nwith the Introduction Video",
+    "Generated by cloudfront (CloudFront)\nRequest ID: goyM1HHNtgtjKOYKUQE0EcN7AKUoq-HZQOdAYWKaY4htl9k_I5wK0g==\nCustomer Data Intake and Information Flows\n1App During Platform Registration\nstage (the very first stage of\napp registration)First name, Last name (JP standards)\nMobile number (with OTP verification)\nEmail address (with magic link verification)\nAcceptance of set of 3 legal terms\nExplicit permission to contact on mobile number and/or email\n2App During Basic Profiling stage (the\nsecond stage of app\nregistration)Date of birth\nGender\nOccupation\nNationality\nResidence status\nResidential address\n3Liquid During external eKYC with\nLiquidDocument capture\nFace capture\nResidential address match/validation\n4App After:\nIntroduction Session\nBefore:\n1st Advisory SessionMultiple options unless stated:\nMarital status (single, married, divorced, other)\nChildren (none, 1 or more)\nEducation level (secondary, university or higher)\nEmployment status (full time, part time, not employed)\nPersonal income (brackets)\nHousehold income (bracket)\nMonthly savings (bracket)\nHave investments",
+    "pptx\nFlow\n01 Feb 2023, 01:07 pmv2",
+    "create\ncentralized\nwork schedule\nmanager for\nadvisors (can\nbe useful for\nFlex routing as\nwell)\nWith the\ncombination of\nthe above and\nfreeBusy API\navailable time\ncan be\ndetermined\nThe rest is\nsame as option\nPros and cons\nsimple implementation,\nstraightforward logic\nflexibility for advisors to\ncreate slots whenever\nthey want\nless work for advisors to\ncreate manual entries in\nGoogle calendar, but still\nsome\nadvisor\nschedule\ncentrally\nmanaged and\ncan be reused\nno additional\nwork for1",
+    "Both Jira Service Management (SLA calendar) and Google calendar\nhave these features but they are not available via API\n- Google: Google Calendar API to get the working hours data from google calendar settings\n- Jira SM:\nOther options:\n- Puzzel and Twilio integration Integrate Flex with Puzzel WFM | Twilio\n- Alvario with Twilio integration Integrate Flex with Alvaria WFM | Twilio\n- RETOOL: Retool | Calendar booking toolDocumentation | FullCalendar\nPossible Retool-centered designed is described in this Figma file\nSession booking flow proposal\n- calendar",
+    "Financial Advisory Experience Flow v1\nExecutive Summary\nThis is the internally aligned version of an experience flow for for financial advisory, meant to be used for action by the\nproduct, data, tech and CSA/FA teams",
+    "Money Coaching Lane\nEnd-to-end Experience FlowThis program documentation is aligned with Soft Launch milestone",
+    "Interns\nRead this as a sequential timeline from top to bottom\nItems described in the same row happen simultaneously\n1Start of the experience flow\n2Prospect views our website CSA logs on to the Contact CenterHabitto Advisor logs on to the Contact\nCenter\n3Prospect installs the app\n4Prospect starts the PLATFORM REGISTRATION\nstage\n5Prospect gives consent for\ncommunication via email and mobile\nnumber (SMS and calls) provided\nduring PLATFORM REGISTRATION stage\nProspect becomes a User\n7User answers additional demographic\nquestions in the BASIC PROFILING stage\n8User is shown the GMO/A\nintermediation information and\naccepts it\n9User is pushed out to GMO/A web\ncontent inside our app view\n10User applies for a GMO/A account and\ncardCSA monitors a Contact Center-\nhosted dashboard of individuals that\nhave started account application\nBUT did not submit it, emails and/or\nvoice calls from within Flex if needed\n11User receives an email link and goes\nthrough eKYC processCSA monitors a Contact Center-\nhosted dashboard of individuals that\nare stuck in eKYC, emails and/or\nvoice calls from within Flex people if\nneeded\n12User receives an email and activates\nthe GMO/A account at their portalCSA monitors a Contact-Center\nhosted dashboard of individuals that\nhave not activated account, emails\nand/or voice calls from within Flex if\nneeded\nUserʼs registration funnel is\ncompleteProspect/User/Customer\nUp to 10",
+    "(this content is pre-provided) (this content is pre-provided)\nUser reads the first in-app chat\nmessages from Habitto Advisor,\nwatches the Introduction Video, but is\nnot able to reply because the initial\nmoney top up is not completed(automated flow)\nHabitto Advisor introduction chat\nmessages are pushed to chat, along\nwith the Introduction Video",
+    "Generated by cloudfront (CloudFront)\nRequest ID: goyM1HHNtgtjKOYKUQE0EcN7AKUoq-HZQOdAYWKaY4htl9k_I5wK0g==\nCustomer Data Intake and Information Flows\n1App During Platform Registration\nstage (the very first stage of\napp registration)First name, Last name (JP standards)\nMobile number (with OTP verification)\nEmail address (with magic link verification)\nAcceptance of set of 3 legal terms\nExplicit permission to contact on mobile number and/or email\n2App During Basic Profiling stage (the\nsecond stage of app\nregistration)Date of birth\nGender\nOccupation\nNationality\nResidence status\nResidential address\n3Liquid During external eKYC with\nLiquidDocument capture\nFace capture\nResidential address match/validation\n4App After:\nIntroduction Session\nBefore:\n1st Advisory SessionMultiple options unless stated:\nMarital status (single, married, divorced, other)\nChildren (none, 1 or more)\nEducation level (secondary, university or higher)\nEmployment status (full time, part time, not employed)\nPersonal income (brackets)\nHousehold income (bracket)\nMonthly savings (bracket)\nHave investments",
+    "pptx\nFlow\n01 Feb 2023, 01:07 pmv2",
+    "Financial Advisory Experience Flow v2\nExecutive Summary\nThis is the internally aligned version of an experience flow for for financial advisory, meant to\nbe used for action by the product, data, tech and CSS/FA teams",
+    "“Money Coaching” Lane\nEnd-to-end Experience FlowRevisit the vocabulary",
+    "Read this as a sequential timeline from top to bottom\nItems described in the same row happen simultaneously\n1Start of the experience\nflow\n2Prospect views our websiteCSS logs on to the Contact\nCenterHabitto Advisor logs on to\nthe Contact Center\n3Prospect installs the app\n4Prospect starts the\nPLATFORM REGISTRATION stage\n5Prospect gives consent for\ncommunication via email\nand mobile number (SMS\nand calls) provided during\nPLATFORM REGISTRATION stageProspect/User/Customer\nUp to 10",
+    "000 expectedCustomer Success\nSupervisor\n3 CSS agents expectedHabitto Advisor\n3 in-house FAs expected\nProspect becomes a\nUser\n7User answers additional\ndemographic questions in\nthe BASIC PROFILING stage\n8User is shown the GMO/A\nintermediation information\nand accepts it\n9User is pushed out to\nGMO/A web content inside\nour app view\n10User applies for a GMO/A\naccount and cardCSS monitors a Contact\nCenter-hosted dashboard of\nindividuals that have started\naccount application BUT\ndid not submit it, emails\nand/or voice calls from\nwithin Flex if needed\n11User receives an email link\nand goes through eKYC\nprocessCSS monitors a Contact\nCenter-hosted dashboard of\nindividuals that are stuck in\neKYC, emails and/or voice\ncalls from within Flex\npeople if needed\n12User receives an email and\nactivates the GMO/A\naccount at their portalCSS monitors a Contact-\nCenter hosted dashboard of\nindividuals that have not\nactivated account, emails\nand/or voice calls from\nwithin Flex if needed\nUserʼs registration\nfunnel is complete\n14User sees app home screen\nand other post-registration\nsections of the app for first\ntimeA Habitto Advisor is task-\nrouted in Flex to this\nparticular User\nThe Habitto Advisor studies\nthe demographic and Basic\nProfiling data available on\nthis particular User via a\npanel in the Contact Center\n15User visits the Advisory\nsection, prompted by the\nunread messages iconCSAʼs templated text\nintroduction message is\nauto-sent to Userʼs chat tab\nfor the first time\n16User explores the profile\ndescription of the Habitto\nAdvisor agent assigned to\nhim",
+    "(this content is pre-\nprovided)(this content is pre-\nprovided)\nUser reads the first in-app\nchat messages from Habitto\nAdvisor, watches the\nIntroduction Video, but is\nnot able to reply because\nthe initial money top up is\nnot completed(automated flow)\nHabitto Advisor\nintroduction chat messages\nare pushed to chat, along\nwith the Introduction Video",
+    "Financial Advisory Experience Flow v2 Executive Summary This is the internally aligned version of an experience flow for for financial advisory, meant to be used for action by the product, data, tech and CSS/FA teams",
+    "Customer Success Supervisors (CSSs) and Habitto Advisors are hired, available and trained into the Flex Contact Center",
+    "Two-way chat happens inside the app in the Advisory tab, and text, files, video files and links can be exchanged there",
+    "Before any synchronous interaction ever takes place, all user will have visibility to a pre- recorded short asynchronous video in which the Advisor assigned to that user will have the chance to say a few words about themselves and Habitto",
+    "10min slots are allocated to a synchronous, pre-scheduled in-app video “Introductory Session” with the Habitto Advisor",
+    "Users have to go through a calendar picking experience to claim that session slot",
+    "30min slots is allocated to a synchronous, pre-schedule in-app video session called “1st Financial Advisory Session” for those that are classified by the Habitto Advisor to need one",
+    "A longer 45min slot is allocated to a synchronous, pre-schedule in-app video “2ndFinancial Advisory Session” for those that had a “1st Financial Advisory Session” and are deemed to need another one (for a focused recommendation)",
+    "User Surveying Throughout the advisory experience, a few different surveys are expected to be triggered by the Habitto Advisor and completed by the user",
+    "Classification and Advisory Lanes 1",
+    "“Money Coaching” Lane End-to-end Experience FlowRevisit the vocabulary",
+    "IF: itʼs something that the Habitto Advisor can quickly respond, they do IF: itʼs something that the Habitto Advisor cannot fend, a warm transfer brings in an available CSA",
+    "NON-LINEAR Customer is curious about one of our particular products Habitto Advisor warm transfers the conversation to an available CSA NON-LINEAR Customer has a technical question about the app CSS engages on chat- based support",
+    "Habitto Advisor warm transfers the conversation to an available CSA NON-LINEAR Customer sets up their PIN or biometric login NON-LINEAR",
+    "A schedule to re-engage with this user is created",
+    "uses available customer data to provide a financial recommendation Habitto Advisor explains how to execute the recommendations 60If prompted to invest, Customer goes through a Suitability CheckHabitto Advisor opens a window with suitability checks and completes them with the customer",
+    "Suitability Check is saved and shared in app 61Customer signals they have understood the Recommendation and commit to action it Habitto Advisor ends video session encouraging to take action on the recommendation and offers their help",
+    "62Customer accesses her financial assessment in appHabitto Advisor writes up the assessment and post on the app Customer Intermediated 64To: SAM Habitto Advisor pushes a Materials Request to SAM via PipedBits 65To: Insurance TBD",
+    "NON-LINEAR ?",
+    "65To: Insurance TBD",
+    "Customer Success Supervisors (CSSs) and Habitto Advisors are hired, available and",
+    "Waitlist blocker is fully lifted — anyone can access the app in stores, install and fully register.",
+    "Two-way chat happens inside the app in the Advisory tab, and text, files, video files and links",
+    "Before any synchronous interaction ever takes place, all user will have visibility to a pre-",
+    "10min slots are allocated to a synchronous, pre-scheduled in-app video “Introductory",
+    "30min slots is allocated to a synchronous, pre-schedule in-app video session called “1st",
+    "A longer 45min slot is allocated to a synchronous, pre-schedule in-app video “2ndFinancial",
+    "“Financial Advisory” Lane",
+    "“Money Coaching” Lane",
+    "Financial Advisory Experience Flow v1 Executive Summary This is the internally aligned version of an experience flow for for financial advisory, meant to be used for action by the product, data, tech and CSA/FA teams",
+    "Customer Success Agents (CSAs) and Habitto Advisors are hired, available and trained into the Contact Center",
+    "Two-way chat happens inside the app in the Advisory tab, and text, files, video files and links can be exchanged there",
+    "CSAs and Habitto Advisorscannot trigger SMSs to communicate with Users (a Twilio limitation)",
+    "CSAs and Habitto Advisorscannot trigger in-app push notifications to communicate with Users (we are working on that)",
+    "Before any synchronous interaction ever takes place, all user will have visibility to a pre-recorded short asynchronous video in which the Advisor assigned to that user will have the chance to say a few words about themselves and Habitto",
+    "10min slots are allocated to a synchronous, pre-scheduled in-app video “Introductory Session” with the Habitto Advisor",
+    "Users have to go through a calendar picking experience to claim that session slot",
+    "30min slots is allocated to a synchronous, pre-schedule in-app video session called “1st Financial Advisory Session” for those that are classified by the Habitto Advisor to need one",
+    "A longer 45min slot is allocated to a synchronous, pre-schedule in-app video “2ndFinancial Advisory Session” for those that had a “1st Financial Advisory Session” and are deemed to need another one (for a focused recommendation)",
+    "User Surveying Throughout the advisory experience, a few different surveys are expected to be triggered by the Habitto Advisor and completed by the user",
+    "Classification and Advisory Lanes 1",
+    "Money Coaching Lane End-to-end Experience FlowThis program documentation is aligned with Soft Launch milestone",
+    "IF: itʼs something that the Habitto Advisor can quickly respond, they do IF: itʼs something that the Habitto Advisor cannot fend, a warm transfer brings in an available CSA",
+    "NON-LINEAR Customer is curious about one of our particular products Habitto Advisor warm transfers the conversation to an available CSA NON-LINEAR Customer has a technical question about the app CSA engages on chat-based support",
+    "Habitto Advisor warm transfers the conversation to an available CSA NON-LINEAR Customer sets up their PIN or biometric login NON-LINEAR",
+    "A schedule to re-engage with this user is created",
+    "uses available customer data to provide a financial recommendation Habitto Advisor explains how to execute the recommendations 60If prompted to invest, Customer goes through a Suitability CheckHabitto Advisor opens a window with suitability checks and completes them with the customer",
+    "Suitability Check is saved and shared in app 61Customer signals they have understood the Recommendation and commit to action it Habitto Advisor ends video session encouraging to take action on the recommendation and offers their help",
+    "(yes/no) Financial goals (NISA, wedding/kids school/ retirement/holiday/buy house/starting a business, dont have any) 5App Immediately after: 1st Advisory SessionCustomer Sentiment Survey (1st): 1",
+    "“Using Habitto has increased my financial confidence” 6App After: 1st Advisory Session Before: 2nd Advisory SessionAttitudinal questions (how they feel about money) and complete missing behavioural questions TBD 7App Immediately after: 2nd Advisory SessionCustomer Sentiment Survey (2nd): 1",
+    "Try another account CSA and Financial Advisory Plans CSA & ADVISO… 06 Feb 2023, 11:27 amAN",
+    "pptx Flow 01 Feb 2023, 01:07 pmv2",
+    "NON-LINEAR ?",
+    "“First Financial Advisory Session”",
+    "1st Advisory SessionMultiple options unless stated",
+    "5App Immediately after",
+    "1st Advisory SessionCustomer Sentiment Survey (1st)",
+    "7App Immediately after",
+    "2nd Advisory SessionCustomer Sentiment Survey (2nd)",
+    "ARB 12 - Advisor Appointment System (revisited ARB4) Background Currently combination of Calendly frontend and Calendly/Google Calendar integration is used to manage advisory session booking",
+    "Intention is to use native UI to schedule sessions with Google Calendar API used to fetch availability of advisors and book/cancel a meeting",
+    "However, Google Calendar API has the following limitations: Work schedule cannot be fetched via API (see Google Issue Tracker in the Reference)",
+    "Also confirmed that this setting is not available when you call calendar settings API Even if you set appointment schedule, it cannot be fetched via any API",
+    "com/calendar/v3/users/me/settings https://www",
+    "com/calendar/v3/freeBusy for the particular date range, but does not fetch any information related to appointment schedule",
+    "OAuth2 is used to access organizationʼs calendar",
+    "Workaround for this is to create one service account in our domain, which would make API calls on user behalf",
+    "Log in Options considered DescriptionAdvisors create calendar events corresponding to available slots with the particular name (e",
+    "4 Jul 2023 All we need is basically a calendar where advisors can easily mark their availability days and hours",
+    "Solution must provide API to retrieve availability for paritcular advisor",
+    "However, Google Calendar API has the following limitations",
+    "Other options",
+    "Session booking flow proposal",
+    "- calendar.js",
+    "Google: Google Calendar API to get the working hours data from google calendar settings",
+    "Puzzel and Twilio integration Integrate Flex with Puzzel WFM | Twilio",
+    "Alvario with Twilio integration Integrate Flex with Alvaria WFM | Twilio",
+    "RETOOL: Retool | Calendar booking toolDocumentation | FullCalendar",
+    "some other open source Creating a scheduling app with React, Nodejs and EmailJS 🧨",
+    "Financial Advisory Experience Flow v2 Executive Summary This is the internally aligned version of an experience flow for for financial advisory, meant to be used for action by the product, data, tech and CSS/FA teams",
+    "Customer Success Supervisors (CSSs) and Habitto Advisors are hired, available and trained into the Flex Contact Center",
+    "Two-way chat happens inside the app in the Advisory tab, and text, files, video files and links can be exchanged there",
+    "Before any synchronous interaction ever takes place, all user will have visibility to a pre- recorded short asynchronous video in which the Advisor assigned to that user will have the chance to say a few words about themselves and Habitto",
+    "10min slots are allocated to a synchronous, pre-scheduled in-app video “Introductory Session” with the Habitto Advisor",
+    "Users have to go through a calendar picking experience to claim that session slot",
+    "30min slots is allocated to a synchronous, pre-schedule in-app video session called “1st Financial Advisory Session” for those that are classified by the Habitto Advisor to need one",
+    "A longer 45min slot is allocated to a synchronous, pre-schedule in-app video “2ndFinancial Advisory Session” for those that had a “1st Financial Advisory Session” and are deemed to need another one (for a focused recommendation)",
+    "User Surveying Throughout the advisory experience, a few different surveys are expected to be triggered by the Habitto Advisor and completed by the user",
+    "Classification and Advisory Lanes 1",
+    "“Money Coaching” Lane End-to-end Experience FlowRevisit the vocabulary",
+    "IF: itʼs something that the Habitto Advisor can quickly respond, they do IF: itʼs something that the Habitto Advisor cannot fend, a warm transfer brings in an available CSA",
+    "NON-LINEAR Customer is curious about one of our particular products Habitto Advisor warm transfers the conversation to an available CSA NON-LINEAR Customer has a technical question about the app CSS engages on chat- based support",
+    "Habitto Advisor warm transfers the conversation to an available CSA NON-LINEAR Customer sets up their PIN or biometric login NON-LINEAR",
+    "A schedule to re-engage with this user is created",
+    "uses available customer data to provide a financial recommendation Habitto Advisor explains how to execute the recommendations 60If prompted to invest, Customer goes through a Suitability CheckHabitto Advisor opens a window with suitability checks and completes them with the customer",
+    "Suitability Check is saved and shared in app 61Customer signals they have understood the Recommendation and commit to action it Habitto Advisor ends video session encouraging to take action on the recommendation and offers their help",
+    "62Customer accesses her financial assessment in appHabitto Advisor writes up the assessment and post on the app Customer Intermediated 64To: SAM Habitto Advisor pushes a Materials Request to SAM via PipedBits 65To: Insurance TBD",
+    "NON-LINEAR ?",
+    "65To: Insurance TBD",
+    "Customer Success Supervisors (CSSs) and Habitto Advisors are hired, available and",
+    "Waitlist blocker is fully lifted — anyone can access the app in stores, install and fully register.",
+    "Two-way chat happens inside the app in the Advisory tab, and text, files, video files and links",
+    "Before any synchronous interaction ever takes place, all user will have visibility to a pre-",
+    "10min slots are allocated to a synchronous, pre-scheduled in-app video “Introductory",
+    "30min slots is allocated to a synchronous, pre-schedule in-app video session called “1st",
+    "A longer 45min slot is allocated to a synchronous, pre-schedule in-app video “2ndFinancial",
+    "“Financial Advisory” Lane",
+    "“Money Coaching” Lane",
+    "Financial Advisory Experience Flow v1 Executive Summary This is the internally aligned version of an experience flow for for financial advisory, meant to be used for action by the product, data, tech and CSA/FA teams",
+    "Customer Success Agents (CSAs) and Habitto Advisors are hired, available and trained into the Contact Center",
+    "Two-way chat happens inside the app in the Advisory tab, and text, files, video files and links can be exchanged there",
+    "CSAs and Habitto Advisorscannot trigger SMSs to communicate with Users (a Twilio limitation)",
+    "CSAs and Habitto Advisorscannot trigger in-app push notifications to communicate with Users (we are working on that)",
+    "Before any synchronous interaction ever takes place, all user will have visibility to a pre-recorded short asynchronous video in which the Advisor assigned to that user will have the chance to say a few words about themselves and Habitto",
+    "10min slots are allocated to a synchronous, pre-scheduled in-app video “Introductory Session” with the Habitto Advisor",
+    "Users have to go through a calendar picking experience to claim that session slot",
+    "30min slots is allocated to a synchronous, pre-schedule in-app video session called “1st Financial Advisory Session” for those that are classified by the Habitto Advisor to need one",
+    "A longer 45min slot is allocated to a synchronous, pre-schedule in-app video “2ndFinancial Advisory Session” for those that had a “1st Financial Advisory Session” and are deemed to need another one (for a focused recommendation)",
+    "User Surveying Throughout the advisory experience, a few different surveys are expected to be triggered by the Habitto Advisor and completed by the user",
+    "Classification and Advisory Lanes 1",
+    "Money Coaching Lane End-to-end Experience FlowThis program documentation is aligned with Soft Launch milestone",
+    "IF: itʼs something that the Habitto Advisor can quickly respond, they do IF: itʼs something that the Habitto Advisor cannot fend, a warm transfer brings in an available CSA",
+    "NON-LINEAR Customer is curious about one of our particular products Habitto Advisor warm transfers the conversation to an available CSA NON-LINEAR Customer has a technical question about the app CSA engages on chat-based support",
+    "Habitto Advisor warm transfers the conversation to an available CSA NON-LINEAR Customer sets up their PIN or biometric login NON-LINEAR",
+    "A schedule to re-engage with this user is created",
+    "uses available customer data to provide a financial recommendation Habitto Advisor explains how to execute the recommendations 60If prompted to invest, Customer goes through a Suitability CheckHabitto Advisor opens a window with suitability checks and completes them with the customer",
+    "Suitability Check is saved and shared in app 61Customer signals they have understood the Recommendation and commit to action it Habitto Advisor ends video session encouraging to take action on the recommendation and offers their help",
+    "(yes/no) Financial goals (NISA, wedding/kids school/ retirement/holiday/buy house/starting a business, dont have any) 5App Immediately after: 1st Advisory SessionCustomer Sentiment Survey (1st): 1",
+    "“Using Habitto has increased my financial confidence” 6App After: 1st Advisory Session Before: 2nd Advisory SessionAttitudinal questions (how they feel about money) and complete missing behavioural questions TBD 7App Immediately after: 2nd Advisory SessionCustomer Sentiment Survey (2nd): 1",
+    "Try another account CSA and Financial Advisory Plans CSA & ADVISO… 06 Feb 2023, 11:27 amAN",
+    "pptx Flow 01 Feb 2023, 01:07 pmv2",
+    "NON-LINEAR ?",
+    "“First Financial Advisory Session”",
+    "1st Advisory SessionMultiple options unless stated",
+    "5App Immediately after",
+    "1st Advisory SessionCustomer Sentiment Survey (1st)",
+    "7App Immediately after",
+    "2nd Advisory SessionCustomer Sentiment Survey (2nd)",
+    "ARB 12 - Advisor Appointment System (revisited ARB4) Background Currently combination of Calendly frontend and Calendly/Google Calendar integration is used to manage advisory session booking",
+    "Intention is to use native UI to schedule sessions with Google Calendar API used to fetch availability of advisors and book/cancel a meeting",
+    "However, Google Calendar API has the following limitations: Work schedule cannot be fetched via API (see Google Issue Tracker in the Reference)",
+    "Also confirmed that this setting is not available when you call calendar settings API Even if you set appointment schedule, it cannot be fetched via any API",
+    "com/calendar/v3/users/me/settings https://www",
+    "com/calendar/v3/freeBusy for the particular date range, but does not fetch any information related to appointment schedule",
+    "OAuth2 is used to access organizationʼs calendar",
+    "Workaround for this is to create one service account in our domain, which would make API calls on user behalf",
+    "Log in Options considered DescriptionAdvisors create calendar events corresponding to available slots with the particular name (e",
+    "4 Jul 2023 All we need is basically a calendar where advisors can easily mark their availability days and hours",
+    "Solution must provide API to retrieve availability for paritcular advisor",
+    "However, Google Calendar API has the following limitations",
+    "Other options",
+    "Session booking flow proposal",
+    "- calendar.js",
+    "Google: Google Calendar API to get the working hours data from google calendar settings",
+    "Puzzel and Twilio integration Integrate Flex with Puzzel WFM | Twilio",
+    "Alvario with Twilio integration Integrate Flex with Alvaria WFM | Twilio",
+    "RETOOL: Retool | Calendar booking toolDocumentation | FullCalendar",
+    "some other open source Creating a scheduling app with React, Nodejs and EmailJS 🧨",
+    "Financial Advisory Experience Flow v2 Executive Summary This is the internally aligned version of an experience flow for for financial advisory, meant to be used for action by the product, data, tech and CSS/FA teams",
+    "Customer Success Supervisors (CSSs) and Habitto Advisors are hired, available and trained into the Flex Contact Center",
+    "Two-way chat happens inside the app in the Advisory tab, and text, files, video files and links can be exchanged there",
+    "Before any synchronous interaction ever takes place, all user will have visibility to a pre- recorded short asynchronous video in which the Advisor assigned to that user will have the chance to say a few words about themselves and Habitto",
+    "10min slots are allocated to a synchronous, pre-scheduled in-app video “Introductory Session” with the Habitto Advisor",
+    "Users have to go through a calendar picking experience to claim that session slot",
+    "30min slots is allocated to a synchronous, pre-schedule in-app video session called “1st Financial Advisory Session” for those that are classified by the Habitto Advisor to need one",
+    "A longer 45min slot is allocated to a synchronous, pre-schedule in-app video “2ndFinancial Advisory Session” for those that had a “1st Financial Advisory Session” and are deemed to need another one (for a focused recommendation)",
+    "User Surveying Throughout the advisory experience, a few different surveys are expected to be triggered by the Habitto Advisor and completed by the user",
+    "Classification and Advisory Lanes 1",
+    "“Money Coaching” Lane End-to-end Experience FlowRevisit the vocabulary",
+    "IF: itʼs something that the Habitto Advisor can quickly respond, they do IF: itʼs something that the Habitto Advisor cannot fend, a warm transfer brings in an available CSA",
+    "NON-LINEAR Customer is curious about one of our particular products Habitto Advisor warm transfers the conversation to an available CSA NON-LINEAR Customer has a technical question about the app CSS engages on chat- based support",
+    "Habitto Advisor warm transfers the conversation to an available CSA NON-LINEAR Customer sets up their PIN or biometric login NON-LINEAR",
+    "A schedule to re-engage with this user is created",
+    "uses available customer data to provide a financial recommendation Habitto Advisor explains how to execute the recommendations 60If prompted to invest, Customer goes through a Suitability CheckHabitto Advisor opens a window with suitability checks and completes them with the customer",
+    "Suitability Check is saved and shared in app 61Customer signals they have understood the Recommendation and commit to action it Habitto Advisor ends video session encouraging to take action on the recommendation and offers their help",
+    "62Customer accesses her financial assessment in appHabitto Advisor writes up the assessment and post on the app Customer Intermediated 64To: SAM Habitto Advisor pushes a Materials Request to SAM via PipedBits 65To: Insurance TBD",
+    "NON-LINEAR ?",
+    "65To: Insurance TBD",
+    "Customer Success Supervisors (CSSs) and Habitto Advisors are hired, available and",
+    "Waitlist blocker is fully lifted — anyone can access the app in stores, install and fully register.",
+    "Two-way chat happens inside the app in the Advisory tab, and text, files, video files and links",
+    "Before any synchronous interaction ever takes place, all user will have visibility to a pre-",
+    "10min slots are allocated to a synchronous, pre-scheduled in-app video “Introductory",
+    "30min slots is allocated to a synchronous, pre-schedule in-app video session called “1st",
+    "A longer 45min slot is allocated to a synchronous, pre-schedule in-app video “2ndFinancial",
+    "“Financial Advisory” Lane",
+    "“Money Coaching” Lane",
+    "Financial Advisory Experience Flow v1 Executive Summary This is the internally aligned version of an experience flow for for financial advisory, meant to be used for action by the product, data, tech and CSA/FA teams",
+    "Customer Success Agents (CSAs) and Habitto Advisors are hired, available and trained into the Contact Center",
+    "Two-way chat happens inside the app in the Advisory tab, and text, files, video files and links can be exchanged there",
+    "CSAs and Habitto Advisorscannot trigger SMSs to communicate with Users (a Twilio limitation)",
+    "CSAs and Habitto Advisorscannot trigger in-app push notifications to communicate with Users (we are working on that)",
+    "Before any synchronous interaction ever takes place, all user will have visibility to a pre-recorded short asynchronous video in which the Advisor assigned to that user will have the chance to say a few words about themselves and Habitto",
+    "10min slots are allocated to a synchronous, pre-scheduled in-app video “Introductory Session” with the Habitto Advisor",
+    "Users have to go through a calendar picking experience to claim that session slot",
+    "30min slots is allocated to a synchronous, pre-schedule in-app video session called “1st Financial Advisory Session” for those that are classified by the Habitto Advisor to need one",
+    "A longer 45min slot is allocated to a synchronous, pre-schedule in-app video “2ndFinancial Advisory Session” for those that had a “1st Financial Advisory Session” and are deemed to need another one (for a focused recommendation)",
+    "User Surveying Throughout the advisory experience, a few different surveys are expected to be triggered by the Habitto Advisor and completed by the user",
+    "Classification and Advisory Lanes 1",
+    "Money Coaching Lane End-to-end Experience FlowThis program documentation is aligned with Soft Launch milestone",
+    "IF: itʼs something that the Habitto Advisor can quickly respond, they do IF: itʼs something that the Habitto Advisor cannot fend, a warm transfer brings in an available CSA",
+    "NON-LINEAR Customer is curious about one of our particular products Habitto Advisor warm transfers the conversation to an available CSA NON-LINEAR Customer has a technical question about the app CSA engages on chat-based support",
+    "Habitto Advisor warm transfers the conversation to an available CSA NON-LINEAR Customer sets up their PIN or biometric login NON-LINEAR",
+    "A schedule to re-engage with this user is created",
+    "uses available customer data to provide a financial recommendation Habitto Advisor explains how to execute the recommendations 60If prompted to invest, Customer goes through a Suitability CheckHabitto Advisor opens a window with suitability checks and completes them with the customer",
+    "Suitability Check is saved and shared in app 61Customer signals they have understood the Recommendation and commit to action it Habitto Advisor ends video session encouraging to take action on the recommendation and offers their help",
+    "(yes/no) Financial goals (NISA, wedding/kids school/ retirement/holiday/buy house/starting a business, dont have any) 5App Immediately after: 1st Advisory SessionCustomer Sentiment Survey (1st): 1",
+    "“Using Habitto has increased my financial confidence” 6App After: 1st Advisory Session Before: 2nd Advisory SessionAttitudinal questions (how they feel about money) and complete missing behavioural questions TBD 7App Immediately after: 2nd Advisory SessionCustomer Sentiment Survey (2nd): 1",
+    "Try another account CSA and Financial Advisory Plans CSA & ADVISO… 06 Feb 2023, 11:27 amAN",
+    "pptx Flow 01 Feb 2023, 01:07 pmv2",
+    "NON-LINEAR ?",
+    "“First Financial Advisory Session”",
+    "1st Advisory SessionMultiple options unless stated",
+    "5App Immediately after",
+    "1st Advisory SessionCustomer Sentiment Survey (1st)",
+    "7App Immediately after",
+    "2nd Advisory SessionCustomer Sentiment Survey (2nd)",
+    "Financial Advisory Experience Flow v2 Executive Summary This is the internally aligned version of an experience flow for for financial advisory, meant to be used for action by the product, data, tech and CSS/FA teams",
+    "Customer Success Supervisors (CSSs) and Habitto Advisors are hired, available and trained into the Flex Contact Center",
+    "Two-way chat happens inside the app in the Advisory tab, and text, files, video files and links can be exchanged there",
+    "Before any synchronous interaction ever takes place, all user will have visibility to a pre- recorded short asynchronous video in which the Advisor assigned to that user will have the chance to say a few words about themselves and Habitto",
+    "10min slots are allocated to a synchronous, pre-scheduled in-app video “Introductory Session” with the Habitto Advisor",
+    "Users have to go through a calendar picking experience to claim that session slot",
+    "30min slots is allocated to a synchronous, pre-schedule in-app video session called “1st Financial Advisory Session” for those that are classified by the Habitto Advisor to need one",
+    "A longer 45min slot is allocated to a synchronous, pre-schedule in-app video “2ndFinancial Advisory Session” for those that had a “1st Financial Advisory Session” and are deemed to need another one (for a focused recommendation)",
+    "User Surveying Throughout the advisory experience, a few different surveys are expected to be triggered by the Habitto Advisor and completed by the user",
+    "Classification and Advisory Lanes 1",
+    "“Money Coaching” Lane End-to-end Experience FlowRevisit the vocabulary",
+    "IF: itʼs something that the Habitto Advisor can quickly respond, they do IF: itʼs something that the Habitto Advisor cannot fend, a warm transfer brings in an available CSA",
+    "NON-LINEAR Customer is curious about one of our particular products Habitto Advisor warm transfers the conversation to an available CSA NON-LINEAR Customer has a technical question about the app CSS engages on chat- based support",
+    "Habitto Advisor warm transfers the conversation to an available CSA NON-LINEAR Customer sets up their PIN or biometric login NON-LINEAR",
+    "A schedule to re-engage with this user is created",
+    "uses available customer data to provide a financial recommendation Habitto Advisor explains how to execute the recommendations 60If prompted to invest, Customer goes through a Suitability CheckHabitto Advisor opens a window with suitability checks and completes them with the customer",
+    "Suitability Check is saved and shared in app 61Customer signals they have understood the Recommendation and commit to action it Habitto Advisor ends video session encouraging to take action on the recommendation and offers their help",
+    "62Customer accesses her financial assessment in appHabitto Advisor writes up the assessment and post on the app Customer Intermediated 64To: SAM Habitto Advisor pushes a Materials Request to SAM via PipedBits 65To: Insurance TBD",
+    "NON-LINEAR ?",
+    "65To: Insurance TBD",
+    "Customer Success Supervisors (CSSs) and Habitto Advisors are hired, available and",
+    "Waitlist blocker is fully lifted — anyone can access the app in stores, install and fully register.",
+    "Two-way chat happens inside the app in the Advisory tab, and text, files, video files and links",
+    "Before any synchronous interaction ever takes place, all user will have visibility to a pre-",
+    "10min slots are allocated to a synchronous, pre-scheduled in-app video “Introductory",
+    "30min slots is allocated to a synchronous, pre-schedule in-app video session called “1st",
+    "A longer 45min slot is allocated to a synchronous, pre-schedule in-app video “2ndFinancial",
+    "“Financial Advisory” Lane",
+    "“Money Coaching” Lane",
+    "Financial Advisory Experience Flow v1 Executive Summary This is the internally aligned version of an experience flow for for financial advisory, meant to be used for action by the product, data, tech and CSA/FA teams",
+    "Customer Success Agents (CSAs) and Habitto Advisors are hired, available and trained into the Contact Center",
+    "Two-way chat happens inside the app in the Advisory tab, and text, files, video files and links can be exchanged there",
+    "CSAs and Habitto Advisorscannot trigger SMSs to communicate with Users (a Twilio limitation)",
+    "CSAs and Habitto Advisorscannot trigger in-app push notifications to communicate with Users (we are working on that)",
+    "Before any synchronous interaction ever takes place, all user will have visibility to a pre-recorded short asynchronous video in which the Advisor assigned to that user will have the chance to say a few words about themselves and Habitto",
+    "10min slots are allocated to a synchronous, pre-scheduled in-app video “Introductory Session” with the Habitto Advisor",
+    "Users have to go through a calendar picking experience to claim that session slot",
+    "30min slots is allocated to a synchronous, pre-schedule in-app video session called “1st Financial Advisory Session” for those that are classified by the Habitto Advisor to need one",
+    "A longer 45min slot is allocated to a synchronous, pre-schedule in-app video “2ndFinancial Advisory Session” for those that had a “1st Financial Advisory Session” and are deemed to need another one (for a focused recommendation)",
+    "User Surveying Throughout the advisory experience, a few different surveys are expected to be triggered by the Habitto Advisor and completed by the user",
+    "Classification and Advisory Lanes 1",
+    "Money Coaching Lane End-to-end Experience FlowThis program documentation is aligned with Soft Launch milestone",
+    "IF: itʼs something that the Habitto Advisor can quickly respond, they do IF: itʼs something that the Habitto Advisor cannot fend, a warm transfer brings in an available CSA",
+    "NON-LINEAR Customer is curious about one of our particular products Habitto Advisor warm transfers the conversation to an available CSA NON-LINEAR Customer has a technical question about the app CSA engages on chat-based support",
+    "Habitto Advisor warm transfers the conversation to an available CSA NON-LINEAR Customer sets up their PIN or biometric login NON-LINEAR",
+    "A schedule to re-engage with this user is created",
+    "uses available customer data to provide a financial recommendation Habitto Advisor explains how to execute the recommendations 60If prompted to invest, Customer goes through a Suitability CheckHabitto Advisor opens a window with suitability checks and completes them with the customer",
+    "Suitability Check is saved and shared in app 61Customer signals they have understood the Recommendation and commit to action it Habitto Advisor ends video session encouraging to take action on the recommendation and offers their help",
+    "(yes/no) Financial goals (NISA, wedding/kids school/ retirement/holiday/buy house/starting a business, dont have any) 5App Immediately after: 1st Advisory SessionCustomer Sentiment Survey (1st): 1",
+    "“Using Habitto has increased my financial confidence” 6App After: 1st Advisory Session Before: 2nd Advisory SessionAttitudinal questions (how they feel about money) and complete missing behavioural questions TBD 7App Immediately after: 2nd Advisory SessionCustomer Sentiment Survey (2nd): 1",
+    "Try another account CSA and Financial Advisory Plans CSA & ADVISO… 06 Feb 2023, 11:27 amAN",
+    "pptx Flow 01 Feb 2023, 01:07 pmv2",
+    "NON-LINEAR ?",
+    "“First Financial Advisory Session”",
+    "1st Advisory SessionMultiple options unless stated",
+    "5App Immediately after",
+    "1st Advisory SessionCustomer Sentiment Survey (1st)",
+    "7App Immediately after",
+    "2nd Advisory SessionCustomer Sentiment Survey (2nd)",
+    "inputing 2FA for money transfer or post a query to human advisor",
+    "AI/DATAIN PROGRESS",
+    "NOT STARTED",
+    "DONETrackActivity StatusReferences",
+    "Habitto FAQ (generated from Dato CMS articles)",
+    "GMOA FAQ (generated by scraping GMOA website)",
+    "Conversational Finance main deck",
+    "DescriptionSolution LiveKit based architecture Decisions",
+    "Not yet achieved",
+    "Inform user about earned cashback or interest",
+    "Take user through the process of bank transfer",
+    "The system should be smart enough to give responses that is only relevant within the context of Habittoʼs business guideline and service description",
+    "The system should response responsively “I donʼt know” when there is no relevant information in its knowledge base",
+    "The system should consistently response in the same language as the input (99% Japanese), and same style as Habittoʼs CS and FA human agents",
+    "Using past chat conversation data related to financial advisory as main knowledge base for FA sub-agent",
+    "Knowledge Base Considerations",
+    "TBDorchestration template",
+    "Using Habitto FAQs as the main knowledge base for CS sub-agent.",
+    "Optionally crawl GMOA FAQs as sub knowledge base. However, this is proven to dilute the",
+    "Using past chat conversation data related to financial advisory as main knowledge base for FA",
+    "Need more time and effort to clean twilio chat data as there is no reliable method to filter",
+    "Habitto's Financial Advisory and Conversational Banking Chat Interfaces Background Our business operates as a financial intermediary offering two distinct chat-based services: Financial Advisory (FA): Specialized advisory services provided by trained financial advisors",
+    "Objective To create comprehensive, secure, and efficient chat interfaces that clearly differentiate between financial advisory (FA) interactions and conversational banking (CS) interactions, enabling seamless and specialized communication tailored for each service",
+    "Financial Advisor (FA) Trained agents providing specialized financial advice, personalized guidance, and facilitating financial transactions",
+    "Conversational Banking Agent (CS) Agents and AI assistants managing general customer support, initial inquiries, and routine banking transactions, routing specialized financial queries to advisors as needed",
+    "Requirements CustomerAs a user, I can choose between financial advisory or conversational banking interfaces based on my needs",
+    "MEDIUM As a user, I want easy-to-use \"conversation starters\" to initiate discussions with my advisor or support agent",
+    "HIGH As a user, I want to see typing indicators when my advisor or support agent is responding",
+    "MEDIUM (Disabled) As a user, I want to see read receipts confirming my advisor or support agent has read my messages",
+    "MEDIUMPersonaUser Story Importa nceJira IssueNotes As a user, I want to perform non-chat actions inside Chat (Chat Action)",
+    "LOW Financial Advisor (FA)As an advisor, I can send \"Chat Action\" CTAs for customers to trigger specific financial-related actions",
+    "HIGH Short term goal As an advisor, I can manage specialized financial advisory conversations exclusively",
+    "As an advisor, I can manage multiple customer conversations simultaneously",
+    "DONE As an advisor, I can set my availability status",
+    "As an advisor, I receive notifications for incoming messages",
+    "DONE As an advisor, I have access to customer profiles and past interactions",
+    "DONE As an advisort, I can transfer conversations to other advisors or support agents",
+    "DONE As an advisor, I can send broadcast messages to multiple customers (Bulk Sending)",
+    "Triggered from CP by advisor/agent",
+    "Examples: Screen navigation, Manabu article navigation, Agree to cross-sales compliance consent, etc",
+    "TBD As an advisor, I receive training and support to utilize the chat system fully",
+    "As an agent, I can seamlessly escalate specialized financial queries to financial advisors",
+    "until 2026?",
+    "Habitto's Financial Advisory and Conversational Banking Chat Interfaces Background Our business operates as a financial intermediary offering two distinct chat-based services: Financial Advisory (FA): Specialized advisory services provided by trained financial advisors",
+    "Objective To create comprehensive, secure, and efficient chat interfaces that clearly differentiate between financial advisory (FA) interactions and conversational banking (CS) interactions, enabling seamless and specialized communication tailored for each service",
+    "Financial Advisor (FA) Trained agents providing specialized financial advice, personalized guidance, and facilitating financial transactions",
+    "Conversational Banking Agent (CS) Agents and AI assistants managing general customer support, initial inquiries, and routine banking transactions, routing specialized financial queries to advisors as needed",
+    "Requirements CustomerAs a user, I can choose between financial advisory or conversational banking interfaces based on my needs",
+    "MEDIUM As a user, I want easy-to-use \"conversation starters\" to initiate discussions with my advisor or support agent",
+    "HIGH As a user, I want to see typing indicators when my advisor or support agent is responding",
+    "MEDIUM (Disabled) As a user, I want to see read receipts confirming my advisor or support agent has read my messages",
+    "MEDIUMPersonaUser Story Importa nceJira IssueNotes As a user, I want to perform non-chat actions inside Chat (Chat Action)",
+    "LOW Financial Advisor (FA)As an advisor, I can send \"Chat Action\" CTAs for customers to trigger specific financial-related actions",
+    "HIGH Short term goal As an advisor, I can manage specialized financial advisory conversations exclusively",
+    "As an advisor, I can manage multiple customer conversations simultaneously",
+    "DONE As an advisor, I can set my availability status",
+    "As an advisor, I receive notifications for incoming messages",
+    "DONE As an advisor, I have access to customer profiles and past interactions",
+    "DONE As an advisort, I can transfer conversations to other advisors or support agents",
+    "DONE As an advisor, I can send broadcast messages to multiple customers (Bulk Sending)",
+    "Triggered from CP by advisor/agent",
+    "Examples: Screen navigation, Manabu article navigation, Agree to cross-sales compliance consent, etc",
+    "TBD As an advisor, I receive training and support to utilize the chat system fully",
+    "As an agent, I can seamlessly escalate specialized financial queries to financial advisors",
+    "until 2026?",
+    "Habitto's Financial Advisory and Conversational Banking Chat Interfaces Background Our business operates as a financial intermediary offering two distinct chat-based services: Financial Advisory (FA): Specialized advisory services provided by trained financial advisors",
+    "Objective To create comprehensive, secure, and efficient chat interfaces that clearly differentiate between financial advisory (FA) interactions and conversational banking (CS) interactions, enabling seamless and specialized communication tailored for each service",
+    "Financial Advisor (FA) Trained agents providing specialized financial advice, personalized guidance, and facilitating financial transactions",
+    "Conversational Banking Agent (CS) Agents and AI assistants managing general customer support, initial inquiries, and routine banking transactions, routing specialized financial queries to advisors as needed",
+    "Requirements CustomerAs a user, I can choose between financial advisory or conversational banking interfaces based on my needs",
+    "MEDIUM As a user, I want easy-to-use \"conversation starters\" to initiate discussions with my advisor or support agent",
+    "HIGH As a user, I want to see typing indicators when my advisor or support agent is responding",
+    "MEDIUM (Disabled) As a user, I want to see read receipts confirming my advisor or support agent has read my messages",
+    "MEDIUMPersonaUser Story Importa nceJira IssueNotes As a user, I want to perform non-chat actions inside Chat (Chat Action)",
+    "LOW Financial Advisor (FA)As an advisor, I can send \"Chat Action\" CTAs for customers to trigger specific financial-related actions",
+    "HIGH Short term goal As an advisor, I can manage specialized financial advisory conversations exclusively",
+    "As an advisor, I can manage multiple customer conversations simultaneously",
+    "DONE As an advisor, I can set my availability status",
+    "As an advisor, I receive notifications for incoming messages",
+    "DONE As an advisor, I have access to customer profiles and past interactions",
+    "DONE As an advisort, I can transfer conversations to other advisors or support agents",
+    "DONE As an advisor, I can send broadcast messages to multiple customers (Bulk Sending)",
+    "Triggered from CP by advisor/agent",
+    "Examples: Screen navigation, Manabu article navigation, Agree to cross-sales compliance consent, etc",
+    "TBD As an advisor, I receive training and support to utilize the chat system fully",
+    "As an agent, I can seamlessly escalate specialized financial queries to financial advisors",
+    "until 2026?",
+    "Habitto Mobile – Product & Engineering Purpose End-to-end documentation for product flows, architecture, and QA across Authentication, Onboarding, Chat, Session Booking, Support, Referral, Money Transfer, Investment, Insurance, and Money Habits (Manabu)",
+    "Table of Contents Authentication Onboarding Chat (Twilio) Session Booking Support Referral Money Transfer Investment Insurance Money Habits (Manabu) App Architecture Analytics & Events Permissions & Privacy Notifications & Deep Links Release Process & QA Conventions File paths in backticks (e",
+    "runAfterInteractions to defer heavy work Authentication Overview Secure access; foreground lock; biometrics; lifecycle management",
+    "ts (delay, runInBackground) Screens Biometric prompt (native) and App Lock gate Error states: unavailable sensor, opt-out Flows First-time biometric: Detect device → prompt → store preference → continue",
+    "ts Selectors: accountOpeningStatusSelector, localeSelector Modals: components/PermissionRequestModal",
+    "Tooltips sequence (savings → insurance → investment → more)",
+    "Analytics onboarding_permission_prompt_shown/accepted onboarding_kyc_status_updated onboarding_initial_setting_action iOS/Android first-run permutations KYC return flows Permission toggles mid-flow Chat (Twilio) Overview Real-time messaging with text/media; typing; read index; push deep-links",
+    "tsx Actions: getInvestmentDetails Mapping: GMO_SERVER_ERRORS for maintenance Analytics investment_card_viewed interest_modal_opened/closed investment_chip_clicked Maintenance mapping Learn paths for closed accounts Performance Insurance Overview Policies lifecycle and re-apply flows",
+    "First-time biometric",
+    "Resume from background",
+    "Foreground hook",
+    "Account opening",
+    "onMessagesLoad(messages)",
+    "messageAdded(message)",
+    "messageUpdated/Removed",
+    "Toggle shared vs assigned",
+    "Empty states",
+    "投資力MAX 化 (Maximize Your Investment Power) — for \"Optimize investment\" Sounds like a game buff or anime-style power-up (“MAX 化 ” = maxing out)",
+    "💥 Feels like: “Letʼs crank your investment power to the max — like a pro",
+    "💁‍♀️ Chatted with advisorアドバイザーさん、い いですか？“Hey Advisor, Got a Sec",
+    "🛋🗺 Advisory Manabu Readアドバイザーって何 者？“What Even Is an Advisor",
+    "🎓 Investment Tab Viewed投資、ちょっと気にな るかも“Hmm, Kinda Curious About Investing…” – Internal monologue tone",
+    "🤔📈 Investment session completed投資ガチ勢 “Hardcore Investor” – Internet slang: “ ガチ勢 ” is someone serious about a hobby",
+    "💪🔥 Investment Manabu Read投資マスターへの道“The Path to Investment Mastery” – Feels like an RPG questline",
+    "This tone is",
+    "Account funded 財力チャージ “Power Charge",
+    "コツコツクラブ (Kotsukotsu Club) — for \"Grow my savings\"",
+    "デビットの美学 (The Aesthetics of Debit) — for \"Spend wisely\"",
+    "人生プラン設計室 (Life Planning Design Room) — for \"Check my money situation\"",
+    "ディフェンス強化 (Strengthen Your Defense) — for \"Get me the right protection\"",
+    "投資力MAX 化 (Maximize Your Investment Power) — for \"Optimize investment\"",
+    "Paid Referral Launch + Monitoring Synopsis Habitto is about to start its first paid referral campaign early in 2024 Q2, for which Product & Tech teams have developed the functionality in Q1 2024",
+    "Reference Documents Front end design: Habitto App UI: Sprint Execution Backend flow: https://www",
+    "com/file/LuoVRY4W3Iar2A5vb0aIRl/Referral-reconciliation-flow",
+    "docx Record of go-no go meeting ARB 24 — Referral Go Live Paid Referral Details Referral terms Amount, end/start dates can be defined per campaign",
+    "Current implementation supports only one-way payment (to referee)",
+    "MANDATORY DONE 7 Jun 2024 Both UI, attribution and payment modules were declared to have been fixed",
+    "Registration Completion Rate iOS: The registration completion rate for iOS is on par with point sites, indicating similar user behavior in completing registrations",
+    "Android: Activation rates are on par with point sites, showing similar behavior",
+    "Conclusion Lower install-to-funded conversion rate and account activation rate on iOS suggest paid referral customers have lower intention to complete the process to receive the ¥1,000 incentive",
+    "Current format",
+    "Adjust-based settings for the attributed link shared (Referral_Prod)",
+    "Note from @André Bose do Amaral",
+    "Click-to-Install Conversion Rate (CVR)",
+    "Registration Completion Rate",
+    "Account Activation",
+    "Account Activation to Funded Conversion Rate (CVR)",
+    "Install to Funded Conversion Rate",
+    "Full Registration/Intermediation Flow (Narrative) Executive Summary Habitto end-to-end registration flow narrative for team debate",
+    "This flow takes into account everything weʼve learned so far about GMO/Aʼs product criteria, constraints, etc",
+    "All modes of app discovery will land the user into either the Apple App Store or Google Play Store, depending on their deviceʼs operating system",
+    "4Platform Registration + Platform ConsentsNew prospects that choose to register for the first time will be led to the Basic Registration process",
+    "The platform registration process starts with the user providing their name (in all necessary alphabet formats), their Japanese +81 mobile number and their email address, together with a simple checkbox permission/consent to be reached out by us through these two contact methods",
+    "Checks will be made in the back-end to try to recognize if the mobile number provided is not already associated existing platform users, users blocked by the compliance team previously, and/or presence or not in our platform waitlist (see next step)",
+    ": If the mobile number verification process fails for any reason listed above, the prospect will be asked to just start over",
+    "NATIVE 5Waitlist Check IF the waitlist functionality is turned on, we will check the userʼs verified mobile number for presence in a waitlist database hosted in AWS",
+    "Others (to be decided by compliance team); : IF the person accepts all the terms, they are allowed to proceed",
+    "NATIVE 10Before We ContinueBefore they continue, they will be told that in order for Habitto to given them access to the interest-generating financial product and the human advisory connection, that: 1",
+    "NATIVE 13Advisor Setting At this point in time, the user will be assigned to an advisor relationship in the background",
+    "WEB VIEW 18Security Layer 2 (eKYC Check)The process of electronic KYC verification will start",
+    ": GMO/A will trigger to users a transactional emailer with a link to start the eKYC process",
+    "NATIVE 21Security Layer 3 (PIN/Bio)As discussed in the conversation around PIN/Bio, the setting flows",
+    "Exploration of the services available across the app;NATIVE References Field constraints and details: Google Restricted content You'll need to request access or try a different account to view this preview",
+    "Try another account Flow visualized: Full Registration Flow (Outdated) 403 ERROR The r equest could not be satisfied",
+    "advisory connection, that",
+    "mandatory fields",
+    "possible paths",
+    "Field constraints and details",
+    "Flow visualized",
+    "Request ID: Vfnn5IzAOOMEdggCrKbMvnESlV7C9V4lINK2zxB4Uul9nMhuvoSaXA==",
+    "Anti-Social Forces;",
+    "Others (to be decided by compliance team);",
+    "Their basic profile needs to be enhanced further AND;",
+    "That they should be 18 years of age or older;",
+    "That they should be a resident in Japan with access to a document like",
+    "That they should NOT be a US tax resident;",
+    "Any other criteria that will exclude them from being a GMO/A account",
+    "Residential Address in Japan;NATIVE"
+  ],
+  "business_rules": [
+    "must\nprovide API to retrieve availability for paritcular advisor.",
+    "cannot be fetched via any API.",
+    "never\nthey want\nless work for advisors to\ncreate manual entries in\nGoogle calendar, but still\nsome\nadvisor\nschedule\ncentrally\nmanaged and\ncan be reused\nno additional\nwork for1.",
+    "cannot be fetched via API (see Google Issue Tracker in the Reference).",
+    "only to internal members of\norganization or external registered users with a google account.",
+    "must\nprovide API to retrieve availability for paritcular advisor.",
+    "cannot be fetched via any API.",
+    "never\nthey want\nless work for advisors to\ncreate manual entries in\nGoogle calendar, but still\nsome\nadvisor\nschedule\ncentrally\nmanaged and\ncan be reused\nno additional\nwork for1.",
+    "cannot be fetched via API (see Google Issue Tracker in the Reference).",
+    "only to internal members of\norganization or external registered users with a google account.",
+    "cannot trigger SMSs to communicate with Users (a Twilio limitation).",
+    "cannot field\nthe question, CSA engages on chat-\nbased reply.",
+    "cannot trigger in-app push notifications to communicate with Users (we are working on that).",
+    "cannot fend, a warm transfer\nbrings in an available CSA.",
+    "must\nprovide API to retrieve availability for paritcular advisor.",
+    "cannot be fetched via any API.",
+    "never\nthey want\nless work for advisors to\ncreate manual entries in\nGoogle calendar, but still\nsome\nadvisor\nschedule\ncentrally\nmanaged and\ncan be reused\nno additional\nwork for1.",
+    "cannot be fetched via API (see Google Issue Tracker in the Reference).",
+    "only to internal members of\norganization or external registered users with a google account.",
+    "cannot trigger SMSs to communicate with Users (a Twilio limitation).",
+    "cannot field\nthe question, CSA engages on chat-\nbased reply.",
+    "cannot trigger in-app push notifications to communicate with Users (we are working on that).",
+    "cannot fend, a warm transfer\nbrings in an available CSA.",
+    "cannot fend,\na warm transfer brings in an\navailable CSA.",
+    "cannot field the question,\nCSA engages on chat-\nbased reply.",
+    "cannot field the question,\nCSA engages on chat-\nbased reply.",
+    "cannot fend,\na warm transfer brings in an\navailable CSA.",
+    "cannot fend, a warm transfer\nbrings in an available CSA.",
+    "cannot trigger in-app push notifications to communicate with Users (we are working on that).",
+    "cannot field\nthe question, CSA engages on chat-\nbased reply.",
+    "cannot trigger SMSs to communicate with Users (a Twilio limitation).",
+    "must\nprovide API to retrieve availability for paritcular advisor.",
+    "cannot be fetched via any API.",
+    "only to internal members of\norganization or external registered users with a google account.",
+    "cannot be fetched via API (see Google Issue Tracker in the Reference).",
+    "never\nthey want\nless work for advisors to\ncreate manual entries in\nGoogle calendar, but still\nsome\nadvisor\nschedule\ncentrally\nmanaged and\ncan be reused\nno additional\nwork for1.",
+    "cannot field the question,\nCSA engages on chat-\nbased reply.",
+    "cannot fend,\na warm transfer brings in an\navailable CSA.",
+    "cannot trigger SMSs to communicate with Users (a Twilio limitation).",
+    "cannot field\nthe question, CSA engages on chat-\nbased reply.",
+    "cannot trigger in-app push notifications to communicate with Users (we are working on that).",
+    "cannot fend, a warm transfer\nbrings in an available CSA.",
+    "cannot be fetched via API (see Google Issue Tracker in the Reference).",
+    "cannot be fetched via any API.",
+    "only to internal members of\norganization or external registered users with a google account.",
+    "must\nprovide API to retrieve availability for paritcular advisor.",
+    "never\nthey want\nless work for advisors to\ncreate manual entries in\nGoogle calendar, but still\nsome\nadvisor\nschedule\ncentrally\nmanaged and\ncan be reused\nno additional\nwork for1.",
+    "cannot field the question,\nCSA engages on chat-\nbased reply.",
+    "cannot fend,\na warm transfer brings in an\navailable CSA.",
+    "cannot trigger SMSs to communicate with Users (a Twilio limitation).",
+    "cannot field\nthe question, CSA engages on chat-\nbased reply.",
+    "cannot trigger in-app push notifications to communicate with Users (we are working on that).",
+    "cannot fend, a warm transfer\nbrings in an available CSA.",
+    "cannot field the question,\nCSA engages on chat-\nbased reply.",
+    "cannot fend,\na warm transfer brings in an\navailable CSA.",
+    "cannot trigger SMSs to communicate with Users (a Twilio limitation).",
+    "cannot field\nthe question, CSA engages on chat-\nbased reply.",
+    "cannot trigger in-app push notifications to communicate with Users (we are working on that).",
+    "cannot fend, a warm transfer\nbrings in an available CSA.",
+    "should be able toRelease\nd Issues\nyears ago, from Jun to Aug, in\nSep 24, etc)\ntell whatʼs estimated cashback\namount for current monthʼs\nspendYes\ntell cashback rate applied Yes\ntell which transactions are\neligible for cashbackYes\ntell me the month when I got\nmy biggest cashbackYes\nYield tell how much yield (interest) I\nearned so farYes\ntell yield earned in the\nparticular period (last month, 2\nyears ago, from Jun to Aug, in\nSep 24, etc)Yes\ntell whatʼs estimated yield\namount for current monthʼs\nbalanceNo\ntell interest rate applied Yes\ntell whether I am maximizing\nmy yieldNo\ntell me how interest rate is\ncalculatedYes\ntell me the month when I got\nmy biggest yieldYes\nTransactionstell me total of money in Yes\ntell me total of money for the\nperiodYes\ntell me total of money outYes\ntell me total of money out the\nperiodYes\nMoney outask whether transfer should be\nto a new destination or from\nthe historyNo\ncollect information from past\ntransfers and initiate itNo\ncollect information for a new\ntransfer and initiate itNo\ndo a quick transfer to Habitto\nuser (using phone number or\nemail as a key)No\nMoney in\nOther Tell the name of my advisorYes\nGet top places where I use my\ndebit cardYes\nSources used for Rag\n1.",
+    "only tackle generic questions using LLM-generated text.",
+    "should consistently response in the same language as the input (99% Japanese),\nand same style as Habittoʼs CS and FA human agents.",
+    "should response responsively “I donʼt know” when there is no relevant information\nin its knowledge base.",
+    "should be smart enough to give responses that is only relevant within the context of\nHabittoʼs business guideline and service description.",
+    "should be smart enough to understand whether a text input from customer is\nFinancial Advisory or Customer Report related, and give helpful responses to custmers.",
+    "only relevant within the context of\nHabittoʼs business guideline and service description.",
+    "only state\nDebounce and memoization to reduce re-renders\nNetwork\nGraphQL hooks for CMS\nAndroid background timers via helpers in utils\nAnalytics & Events\nNaming Conventions\n{domain}{action}{outcome} e.",
+    "required to start internal\nPROD testing\nUpdate and finalize T&C particularly in\nregards 2 way payments.",
+    "only one-way payment (to referee).",
+    "MANDATORY IN PROGRESS for 15 Jun\n2024@Machiko Fujii\n(Deactivated) will take this\ntask\nMKT team will decide which\ncohort they will reach out.",
+    "should consider the idea that a\nspecific install landing page should be used in the\nsettings for this deeplink type only.",
+    "MANDATORY IN PROGRESS @Rena Kirigaya is on it.",
+    "MANDATORY DONE Will be released on 10 Apr\n2024 night\nMANDATORY IN PROGRESS Will be shared by 10 May\n2024 by @Koshi Watanabe\nand @Yasunori Kume\nMANDATORY DONE @André Bose do Amaral\n@Hikaru are on it.",
+    "MANDATORY DONE 7 Jun 2024 Both UI,\nattribution and payment\nmodules were declared to\nhave been fixed.",
+    "MANDATORY DONEAction CriticalityStatus Notes\nDeploy fixes required to start internal\nPROD testing\nUpdate and finalize T&C particularly in\nregards 2 way payments.",
+    "cannot\nbe increased infinitely).",
+    "Should open Apple App Store at Habitto app page.",
+    "Should open app (no specific screen).",
+    "Should open Google Play at Habitto app page.",
+    "only available once API\nconnection is done by the referrer.",
+    "should ideally receive an OneSignal-powered\nSMS or transactional emailer with a log of that event, and also another\nmessage when they are free to proceed.",
+    "should be 18 years of age or older;\n3.",
+    "should NOT be a US tax resident;\n5.",
+    "should protect\ntheir accounts with a Habitto account password.",
+    "should be a resident in Japan with access to a document like\nMyNumber card, driverʼs license or residency card;\n4.",
+    "should be asked if they are a US resident.",
+    "should be triggered here to mark to the user\nthat they are now the holders of a GMO/A virtual account, and that they\ncan transfer money in by following a certain number of steps.",
+    "should be triggered here to log to the userʼs\ninbox that their Habitto platform account is now successfully created, with\nURL links to the copies of the terms they consented to at the Platform\nConsents stage + instructions about troubleshoting their mobile\nnumber/password security layer already set + and lastly, and most\nimportantly, a deep link asking them to enhance their profile further in\norder to access our financial products.",
+    "only accepting\nprospects previously registered on a waitlist, and they will be told that their\nplatform account is created, but we will let them know when then\ncomplete their registration.",
+    "should expose to the user the opt-in of any o\n1.",
+    "should be blocked\nfrom proceeding.",
+    "mandatory fields:\n1."
+  ]
+}

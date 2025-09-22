@@ -1,0 +1,67 @@
+{
+  "app_name": "Habitto",
+  "core_framework": {
+    "react_native": "0.75.4",
+    "react": "18.3.1",
+    "typescript": "5.0.4"
+  },
+  "state_management": {
+    "redux_toolkit": "2.5.0",
+    "redux": "5.0.1",
+    "redux_saga": "1.3.0",
+    "redux_persist": "6.0.0"
+  },
+  "navigation": {
+    "react_navigation": "6.0.6",
+    "bottom_tabs": "6.3.3",
+    "drawer": "6.5.0",
+    "native_stack": "6.2.5"
+  },
+  "backend_api": {
+    "apollo_client": "3.5.7",
+    "graphql": "16.8.1",
+    "aws_amplify": "5.3.12",
+    "axios": "1.6.4"
+  },
+  "ui_components": {
+    "flash_list": "1.8.3",
+    "fast_image": "8.6.3",
+    "linear_gradient": "2.6.2",
+    "svg": "15.12.0",
+    "lottie": "6.7.2"
+  },
+  "media_communication": {
+    "livekit": "2.7.6",
+    "twilio_video": "custom",
+    "video_player": "6.5.0",
+    "track_player": "4.1.1"
+  },
+  "analytics_monitoring": {
+    "segment": "2.15.0",
+    "sentry": "6.5.0",
+    "adjust": "5.0.2"
+  },
+  "testing": {
+    "jest": "29.6.3",
+    "testing_library": "12.2.2",
+    "react_test_renderer": "18.3.1"
+  },
+  "build_development": {
+    "metro": "0.76.9",
+    "babel": "7.20.0",
+    "eslint": "8.19.0",
+    "prettier": "2.8.8"
+  },
+  "key_features": [
+    "Cross-platform mobile app (iOS/Android)",
+    "Real-time video/audio communication",
+    "State management with Redux",
+    "GraphQL API integration",
+    "Push notifications",
+    "Analytics and crash reporting",
+    "Internationalization (i18n)",
+    "Code push for updates",
+    "Background processing",
+    "File handling and media"
+  ]
+}

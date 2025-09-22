@@ -1,0 +1,7 @@
+SIGN UP
+Find the authentication flow
+
+Figma Links:
+http://figma.com/design/fnCxddHpd5tOcjYxzliAxc/Habitto-App-UI--Sprint-Execution?node-id=25461-65002&t=dZkErYTJGbq9q4H5-0
+Labels: 
+Components: 

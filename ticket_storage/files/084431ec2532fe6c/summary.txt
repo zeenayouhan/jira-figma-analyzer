@@ -1,0 +1,7 @@
+Onboarding user
+Implement authentication flow
+
+Figma Links:
+https://www.figma.com/design/fnCxddHpd5tOcjYxzliAxc/Habitto-App-UI--Sprint-Execution?node-id=25461-65002&t=VjiVeucASfLnND6A-0
+Labels: 
+Components: 

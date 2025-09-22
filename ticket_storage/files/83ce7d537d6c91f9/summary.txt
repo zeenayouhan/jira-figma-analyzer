@@ -1,0 +1,25 @@
+As a verified customer, I can manage/update my personal information
+After initial app registration, users should be able to at least read/see a basic profile area with their information in place, and do some basic profile related tasks 
+
+
+
+Main sections : 
+
+
+
+view user profile information , those verified by KYC will come with a blue check mark 
+
+Switch on and off app push notifications (will likely be a static page with GMOa information)
+
+Documents - links to DatoCMS to retrieve key documents , app terms of use etc
+
+Security - (user is able to toggle on and off biometrics, set up passcode and change the passcode )
+
+Company - key info about Habitto organization, mostly static 
+
+
+
+Figma Links:
+https://www.figma.com/design/fnCxddHpd5tOcjYxzliAxc/Habitto-App-UI--Sprint-Execution?node-id=9867-22967&t=qGOiHRiUvWPBXQC5-0
+Labels: 
+Components: 

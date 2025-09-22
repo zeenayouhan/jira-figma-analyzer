@@ -1,0 +1,25 @@
+[POC] Implement Chat interface using Flyer chat and Twilio conversation payload
+Develop a proof of concept (POC) chat interface by integrating the open-source Flyer Chat UI library (GitHub repo) with Twilio Conversations message payloads. This interface will simulate a basic Habitto-style conversation using mock data from Twilio's SDK, without requiring live integration.
+
+This POC aims to evaluate the feasibility of using Flyer Chat for rendering conversation threads and how well it can display Twilio-based message payloads, including sender info, message types, timestamps, images and attachments (if applicable).
+
+Scope:
+
+Build a lightweight React Native app/sandbox with the Flyer Chat UI.
+
+Load mocked Twilio Conversation payloads to simulate one or more user-bot conversations.
+
+Ensure messages appear in correct order with appropriate timestamps.
+
+Use hardcoded or JSON mock data to simulate different message types (e.g., text, system messages, maybe attachments).
+
+Do not connect to Twilio backend — local rendering only.
+
+Make UI theming match Habitto's visual style as closely as possible.
+
+
+
+Figma Links:
+https://www.figma.com/design/4x1T7IbI3OhtYWr9CH9I7V/Habitto-AI-Assistant---Chat-Revamp?node-id=40-1168&p=f&t=5OB4jl2Qwa6K0MUD-0
+Labels: 
+Components: 

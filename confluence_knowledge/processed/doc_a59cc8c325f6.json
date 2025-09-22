@@ -1,0 +1,54 @@
+{
+  "doc_id": "doc_a59cc8c325f6",
+  "title": "SJML-ARB 45 — Tech Stack for AI Voice Assistant-110925-142532.pdf",
+  "content": "ARB 45 — Tech Stack for AI Voice Assistant\n Background\nConversational Banking is the area that was defined as the starting point for Conversational\nFinance at Habitto and it was decided that it will be a Voice Assistant with these use cases in\nmind:\n- Inform user about earned cashback or interest\n- Take user through the process of bank transfer\nReferences\nConversational Finance main deck: \nArchitecture + Decisions on componentsImpact HIGH\nDriver @Aleksandr Riabcev@André Bose do Amaral\nApprover @Aleksandr Riabcev\nContributors @Kasun Prabath@Phat Nguyen@Hikaru\nInformed @Sam Ghiotti@Liam McCance@Yasunori Kume@Joey Wu\nDue date 30 Jun 2025\nResources See below.Status STARTED\nhttps://docs.google.com/presentation/d/19yAm6T97LvlNnnYqTy3cN5RuMRA6C-Ec\nDescriptionSolution LiveKit based architecture Decisions\n\nLiveKIT is and open source AI Voice\nAssistant framework powering Open\nAI. Consisting of FE SDK, LiveKit\nServer and LiveKit Agent (libraries).\nLK Server can be either LiveKIT\nprovisioned or self-hosted. LK Agent\nis now available in Python, but node.js\nis coming as well. Agent can have\naccess to tools, which can be\nanything from standard python\nfunctions, API calls to RPC calls to FE\nand calling in another agent.\nVoice AI quickstart | LiveKit Docs\nTool definition and use | LiveKit Doc\ns\nPros Proven, production-ready\nUltra low-latency (claim)\nDocumentation\nReactNative SDK available\nRich functionality\nCons To be asssessed, currently donʼt\nsee any\nChoice of deployment\nfor LK ServerSelf-hosted or LK cloud Internal - LK cloud\nClosed testing onwards - Self-\nhosted\nChoice of deployment\nfor LK agentPython or node.js\nLambda vs ECS (EKS)Python on ECS\nChoice of LLM Claude on AWS Bedrock, ChatGPTChatGPT Realtime API (voice\nto voice)\nChoice of STT, TTSThere is also an option of using\nRealitme API with ChatGPT, which\ndoes not require standalone STT/TTSNo need, handled by LLM\nCost TBC\n Action items\n Outcome\nNot yet achieved\n",
+  "url": "",
+  "space_key": "",
+  "page_id": "",
+  "created_date": "2025-09-11",
+  "updated_date": "",
+  "author": "",
+  "labels": [],
+  "parent_page": "",
+  "extracted_text": "ARB 45 — Tech Stack for AI Voice Assistant\nBackground\nConversational Banking is the area that was defined as the starting point for Conversational\nFinance at Habitto and it was decided that it will be a Voice Assistant with these use cases in\nmind:\n- Inform user about earned cashback or interest\n- Take user through the process of bank transfer\nReferences\nConversational Finance main deck:\nArchitecture + Decisions on componentsImpact HIGH\nDriver @Aleksandr Riabcev@André Bose do Amaral\nApprover @Aleksandr Riabcev\nContributors @Kasun Prabath@Phat Nguyen@Hikaru\nInformed @Sam Ghiotti@Liam McCance@Yasunori Kume@Joey Wu\nDue date 30 Jun 2025\nResources See below.Status STARTED\nhttps://docs.google.com/presentation/d/19yAm6T97LvlNnnYqTy3cN5RuMRA6C-Ec\nDescriptionSolution LiveKit based architecture Decisions\nLiveKIT is and open source AI Voice\nAssistant framework powering Open\nAI. Consisting of FE SDK, LiveKit\nServer and LiveKit Agent (libraries).\nLK Server can be either LiveKIT\nprovisioned or self-hosted. LK Agent\nis now available in Python, but node.js\nis coming as well. Agent can have\naccess to tools, which can be\nanything from standard python\nfunctions, API calls to RPC calls to FE\nand calling in another agent.\nVoice AI quickstart | LiveKit Docs\nTool definition and use | LiveKit Doc\nPros Proven, production-ready\nUltra low-latency (claim)\nDocumentation\nReactNative SDK available\nRich functionality\nCons To be asssessed, currently donʼt\nsee any\nChoice of deployment\nfor LK ServerSelf-hosted or LK cloud Internal - LK cloud\nClosed testing onwards - Self-\nhosted\nChoice of deployment\nfor LK agentPython or node.js\nLambda vs ECS (EKS)Python on ECS\nChoice of LLM Claude on AWS Bedrock, ChatGPTChatGPT Realtime API (voice\nto voice)\nChoice of STT, TTSThere is also an option of using\nRealitme API with ChatGPT, which\ndoes not require standalone STT/TTSNo need, handled by LLM\nCost TBC\nAction items\nOutcome\nNot yet achieved",
+  "headings": [
+    "mind",
+    "Conversational Finance main deck",
+    "DescriptionSolution LiveKit based architecture Decisions",
+    "Not yet achieved"
+  ],
+  "code_blocks": [],
+  "links": [],
+  "images": [],
+  "tables": [],
+  "tech_stack_mentions": [
+    "Node.js",
+    "Node.js",
+    "AWS",
+    "Lambda",
+    "SDK",
+    "SDK"
+  ],
+  "api_endpoints": [
+    "https://docs.google.com/presentation/d/19yAm6T97LvlNnnYqTy3cN5RuMRA6C-Ec"
+  ],
+  "component_names": [
+    "Finance",
+    "Main",
+    "Conversational",
+    "DescriptionSolution",
+    "LiveKit",
+    "Decisions"
+  ],
+  "feature_descriptions": [
+    "Conversational Finance main deck",
+    "DescriptionSolution LiveKit based architecture Decisions",
+    "Not yet achieved",
+    "Inform user about earned cashback or interest",
+    "Take user through the process of bank transfer"
+  ],
+  "business_rules": [],
+  "processing_date": "2025-09-11T20:02:10.747514",
+  "word_count": 287,
+  "relevance_score": 83.74
+}

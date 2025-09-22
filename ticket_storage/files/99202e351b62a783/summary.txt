@@ -1,0 +1,95 @@
+Discuss and implement basic customer schema in our database
+To initiate our discussions around how we will structure our customer view, here’s a table about some of the key/value pairs that will be absolutely necessary: 
+
+Key
+
+Format
+
+Value
+
+ID
+
+Auto-generated
+
+
+
+Full name
+
+Text
+
+Text string with x max characters.
+
+Nickname
+
+Text
+
+Text string with shorter x max characters.
+
+Mobile number
+
+Number
+
+Users should use their mobile numbers to sign in.
+
+Email address
+
+Email
+
+Email format validation
+
+Date of birth
+
+Date
+
+DD/MM/YYYY
+
+Gender
+
+Boolean
+
+Male Female Not Specified
+
+Address (array)
+
+Array
+
+House number, Block number, Street, District, Ward, City, Prefecture, Postal code.
+
+There are 47 fixed prefectures in Japan.
+
+Postal codes follow the 〒NNN-NNNN format.
+
+Occupation
+
+Text
+
+Company employee
+Company director
+Association staff member
+Association executive
+Government employee
+Temporary/Part-time worker
+Self-employed
+Student
+Housewife
+Unemployed
+Other
+
+Company
+
+Text
+
+Text (might need logic based on answer above)
+
+Users can be grouped under similar Companies. This will help us figure out group insurance ideas later.
+
+Users can be related to other Users (mom, dad, siblings). This will help us figure out family units later.
+
+Users can have one or more Devices. We will need these mobile device IDs in order to figure out push notifications later.
+
+Users can have one or more Documents, like My Number ID, driving licenses or passport.
+
+Figma Links:
+https://www.figma.com/design/fnCxddHpd5tOcjYxzliAxc/Habitto-App-UI--Sprint-Execution?node-id=9867-22967&t=qGOiHRiUvWPBXQC5-0
+Labels: 
+Components: 

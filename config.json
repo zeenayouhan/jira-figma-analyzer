@@ -1,0 +1,10 @@
+{
+  "default_output_dir": "analysis_outputs",
+  "default_input_dir": "examples",
+  "report_template": "comprehensive",
+  "include_figma_analysis": true,
+  "include_test_cases": true,
+  "include_questions": true,
+  "max_questions_per_category": 15,
+  "max_test_cases_per_category": 20
+}

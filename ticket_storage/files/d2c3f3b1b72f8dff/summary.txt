@@ -1,0 +1,46 @@
+As a financial advisor, I want to send chat messages that include deeplinks or in-app actions
+Background:
+
+Habitto’s conversational experience is a key engagement channel between customers and financial advisors. To improve customer support, financial advisors need the ability to guide users more effectively during chats. This involves embedding deeplinks (to navigate to specific screens) or custom app actions (to trigger UI widgets) directly within messages sent via the Twilio Flex/CP.
+
+This functionality requires seamless coordination between:
+
+Twilio Flex/CP (agent chat interface)
+
+Habitto App frontend (deeplink and widget handling)
+
+Robust handling of deeplink formatting, fallback behavior, and message rendering is crucial for a consistent and helpful user experience.
+
+Scope:
+
+Enable advisors to insert predefined or dynamic deeplinks and actions into chat messages.
+
+Ensure the app can interpret and act on these deeplinks or commands reliably.
+
+Create message templates or UI in Flex to reduce manual formatting for advisors.
+
+Support both navigation (e.g., to a portfolio screen) and widget triggering (e.g., open an investment calculator).
+
+Acceptance Criteria:
+
+Scenario 1: Deeplink
+Given that an advisor is in a conversation in Twilio Flex,
+When they send a message containing a deeplink
+Then the customer’s app should interpret the deeplink and navigate to the specified screen.
+
+Scenario 2: Chat action
+Given that an advisor sends a message with an embedded app action
+When the customer receives and taps the message,
+Then the app should open the corresponding widget overlay or component.
+
+Scenario 3: Unsupported deeplink  fallback
+Given that a customer receives a chat message with an unsupported or malformed deeplink,
+When they tap it,
+Then the app should fail gracefully and show an informative error message or default to a safe fallback.
+
+
+
+Figma Links:
+https://www.figma.com/design/4x1T7IbI3OhtYWr9CH9I7V/Habitto-AI-Assistant---Chat-Revamp?node-id=40-1168&p=f&t=kInRz32pfgYhwXNA-0
+Labels: 
+Components: 

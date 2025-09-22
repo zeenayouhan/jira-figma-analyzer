@@ -1,0 +1,206 @@
+# Discuss and implement basic customer schema in our database (MANUAL-001)
+
+## Ticket Information
+- **Priority**: Medium
+- **Assignee**: Unassigned
+- **Reporter**: You
+- **Created**: 2025-09-11T22:45:08.862031
+- **Labels**: 
+- **Components**: 
+
+## Description
+To initiate our discussions around how we will structure our customer view, here’s a table about some of the key/value pairs that will be absolutely necessary: 
+
+Key
+
+Format
+
+Value
+
+ID
+
+Auto-generated
+
+
+
+Full name
+
+Text
+
+Text string with x max characters.
+
+Nickname
+
+Text
+
+Text string with shorter x max characters.
+
+Mobile number
+
+Number
+
+Users should use their mobile numbers to sign in.
+
+Email address
+
+Email
+
+Email format validation
+
+Date of birth
+
+Date
+
+DD/MM/YYYY
+
+Gender
+
+Boolean
+
+Male Female Not Specified
+
+Address (array)
+
+Array
+
+House number, Block number, Street, District, Ward, City, Prefecture, Postal code.
+
+There are 47 fixed prefectures in Japan.
+
+Postal codes follow the 〒NNN-NNNN format.
+
+Occupation
+
+Text
+
+Company employee
+Company director
+Association staff member
+Association executive
+Government employee
+Temporary/Part-time worker
+Self-employed
+Student
+Housewife
+Unemployed
+Other
+
+Company
+
+Text
+
+Text (might need logic based on answer above)
+
+Users can be grouped under similar Companies. This will help us figure out group insurance ideas later.
+
+Users can be related to other Users (mom, dad, siblings). This will help us figure out family units later.
+
+Users can have one or more Devices. We will need these mobile device IDs in order to figure out push notifications later.
+
+Users can have one or more Documents, like My Number ID, driving licenses or passport.
+
+Figma Links:
+https://www.figma.com/design/fnCxddHpd5tOcjYxzliAxc/Habitto-App-UI--Sprint-Execution?node-id=9867-22967&t=qGOiHRiUvWPBXQC5-0
+
+## Figma Links
+- https://www.figma.com/design/fnCxddHpd5tOcjYxzliAxc/Habitto-App-UI--Sprint-Execution?node-id=9867-22967&t=qGOiHRiUvWPBXQC5-0
+
+## Analysis Results
+
+### Suggested Questions (20)
+- How will the implementation of the basic customer schema enhance the financial advisory experience for both advisors and clients?
+- Can the design of the customer view in Figma accommodate all the key/value pairs specified in the database schema?
+- How will the customer schema integrate with existing technologies like React, Mixpanel, and Express mentioned in the knowledge base?
+- Are there specific UI components in the Figma design that require complex implementation, considering the 3349 UI components across 75 screens?
+- What considerations have been made in the Figma design for the accessibility of buttons, form inputs, and error messaging for a seamless user experience?
+- How does the customer schema align with financial services compliance requirements, especially regarding data protection and handling of sensitive information?
+- In what ways does the customer schema support scalability and future growth within the platform architecture, considering the complexity of the Figma design?
+- Are there specific screen flows and navigation patterns in the Figma design that need to be optimized for user engagement and task completion?
+- How will the integration of the customer schema with other screens and flows in the Figma design impact the overall user experience?
+- Can the Figma design accommodate mobile responsiveness and cross-platform compatibility for a seamless user experience on different devices?
+- Are there any specific business rules or workflows from the financial advisory experience flows that need to be integrated into the customer schema and Figma design?
+- How will the customer schema handle the categorization of users based on occupation and grouping under companies for potential insurance benefits?
+- Are there any specific components in the Figma design related to the registration, login, or account update processes that require special attention in the implementation?
+- How will the customer schema support the relationship between users (family units) and the association of users with devices and documents as shown in the Figma design?
+- Is there a clear distinction in the Figma design between advisor-facing screens like the Advisor Profile and client-facing screens for a cohesive user experience?
+- How will the implementation of the customer schema impact the efficiency of financial advisory workflows, especially in terms of customer data management and retrieval?
+- Can the Figma design handle the complexity of the multi-screen application, considering the various stages like PLATFORM REGISTRATION and AI Assistant Waitlist Mechanism?
+- How will the customer schema handle the validation and error handling of forms, especially with the large number of UI components across different screens?
+- Are there specific considerations in the Figma design for the pagination and performance of list components to ensure a smooth user experience?
+- How will the customer schema in the database align with the key features and roles mentioned in the Financial Advisory Experience Flow documents?
+
+### Design Questions (14)
+- How should the '@mail.gmo-aozora.com' handle voice recognition accuracy and noise cancellation in the implementation?
+- What are the conversation memory limits and context retention patterns for the '@mail.gmo-aozora.com'?
+- What's the deep linking strategy for the 'Booking Tab: Post-Session Booking / Pre-Session' to handle direct navigation to AI features?
+- What accessibility features are needed for the 'Booking Tab: Post-Session Booking / Pre-Session' to support screen reader navigation?
+- What input sanitization and validation rules should be applied to the '1-problems in data, additional information requested for KYC to proceed'?
+- What's the minimum touch target size and haptic feedback for the 'Action Button' on mobile devices?
+- What's the data caching strategy for the '2-screening in progress' to improve performance?
+- How should the '2-screening in progress' handle orientation changes and different device sizes?
+- How should the AI assistant integrate with existing financial advisory workflows in the Habitto platform?
+- What compliance and security measures are needed for AI-generated financial advice features?
+- How should the chat interface handle sensitive financial data and PII protection?
+- How should the 3349 components be organized into reusable packages for the React Native design system?
+- What testing strategy is needed to validate AI conversation flows across the 72 screens?
+- What's the memory management strategy for handling large conversation histories in the AI chat?
+
+### Business Questions (15)
+- How will implementing the basic customer schema impact our revenue streams through enhanced client segmentation and targeted offerings?
+- What client acquisition strategies can be optimized by utilizing the new customer view structure in our database?
+- How can the new customer schema contribute to advisor productivity by providing a comprehensive view of client information?
+- What compliance and regulatory considerations need to be addressed when structuring the customer data in our database?
+- How can the new customer schema help in mitigating risks associated with data security and privacy in financial advisory services?
+- In what ways can the structured customer data set us apart from competitors in the financial advisory market?
+- How scalable is the proposed customer schema in accommodating future business growth and client base expansion?
+- What resources, both financial and human, will be required to effectively implement and maintain the new customer schema?
+- What key success metrics can be used to measure the effectiveness of the new customer schema in enhancing client relationships and service delivery?
+- How will the integration of the customer schema with existing business processes streamline appointment scheduling and client management workflows?
+- How can the new customer schema improve client retention rates through personalized services and tailored financial advice?
+- What operational efficiencies can be gained by implementing the basic customer schema in terms of time saved on manual data entry and retrieval?
+- How can the structured customer data support the development of group insurance ideas based on user occupation and company relationships?
+- What implications does the customer schema have on the documentation and verification process for client onboarding and compliance checks?
+- How can the customer schema facilitate the identification and management of family units within the client base for personalized financial planning solutions?
+
+### Technical Considerations (5)
+- Database schema changes may be required
+- Consider data migration strategy
+- React Native platform-specific implementations
+- App store deployment considerations
+- High complexity design (Habitto App UI: Sprint Execution) may require additional development time
+
+### Test Cases (25)
+- 1. Verify that the ID field is auto-generated upon creating a new customer record.
+- 2. Test that the Full name field accepts text strings with the specified maximum number of characters.
+- 3. Validate that the Nickname field accepts text strings with a shorter maximum number of characters.
+- 4. Ensure that users can sign in using their Mobile number as required.
+- 5. Verify that the Email address field validates email format correctly.
+- 6. Test that the Date of birth field accepts dates in the format DD/MM/YYYY.
+- 7. Validate that the Gender field allows selection of Male, Female, or Not Specified options.
+- 8. Verify that the Address array includes all required subfields: House number, Block number, Street, District, Ward, City, Prefecture, and Postal code.
+- 9. Test that the Prefecture field only accepts one of the 47 fixed prefectures in Japan.
+- 10. Validate that the Postal code field follows the 〒NNN-NNNN format.
+- 11. Test that the Occupation field allows selection of all specified options.
+- 12. Verify that the Company field logic works based on the selected Occupation.
+- 13. Test that Users can be related to other Users (mom, dad, siblings) as specified.
+- 14. Validate that Users can have one or more Devices associated with their profile.
+- 15. Test that Users can have one or more Documents attached to their profile.
+- 16. Verify that the Figma link provided in the ticket directs to the correct UI design.
+- 17. Test the functionality of the implemented customer schema in the Habitto App UI.
+- 18. Perform User Acceptance Testing to ensure the customer schema meets user requirements.
+- 19. Test edge cases such as entering invalid data formats in fields to validate error handling.
+- 20. Perform performance testing to ensure the customer schema implementation does not impact app performance.
+- 21. Verify accessibility features such as screen reader compatibility for the customer schema.
+- 22. Perform cross-platform testing to ensure the customer schema works seamlessly on both mobile and desktop platforms.
+- 23. Test integration with other system components to ensure data consistency and accuracy.
+- 24. Validate security measures implemented to protect customer data in the database.
+- 25. Test the scalability of the customer schema to handle a large volume of customer records.
+
+### Risk Areas (4)
+- Very complex design (Habitto App UI: Sprint Execution) may exceed estimated effort
+- Cross-platform compatibility testing required
+- App store approval process may add timeline risk
+- Database changes may require careful migration planning
+
+---
+*Analysis generated on 2025-09-11T22:45:08.862031 (Version 1.0)*
