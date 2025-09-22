@@ -350,6 +350,7 @@ class TicketStorageSystem:
         except Exception as e:
             print(f"Error deleting all tickets: {e}")
             return False
+    
     def get_priority_distribution(self) -> List[Dict[str, Any]]:
         """Get priority distribution data for charts."""
         # Mock data since we don't have priority field yet
