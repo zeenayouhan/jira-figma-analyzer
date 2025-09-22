@@ -1,5 +1,0 @@
-[FE] LiveKit SDK integration into a new chat environment
-Bring LiveKit SDK into new chat environment and try to make the basic connection with the LiveKit Server/Agent (build onsite). 
-Try to implement a few areas in the current design, such as “moving abstract form”, audio indicator.
-Labels: 
-Components: 

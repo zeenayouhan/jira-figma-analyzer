@@ -1,4 +1,0 @@
-SIGN UP
-Find the authentication flow
-Labels: 
-Components: 

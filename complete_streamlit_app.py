@@ -76,7 +76,7 @@ def display_gpt4_vision_results(result):
             
             with col1:
                 st.metric("Design Quality Score", f"{visual_analysis.design_quality_score:.1f}/10")
-                st.metric("Implementation Complexity", visual_analysis.implementation_complexity.title())
+                st.metric("Implementation Complexity", str(visual_analysis.implementation_complexity.get("level", "Unknown")).title())
                 st.metric("Confidence Score", f"{visual_analysis.confidence_score:.1%}")
             
             with col2:

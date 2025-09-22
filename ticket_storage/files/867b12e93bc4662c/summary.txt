@@ -1,8 +1,0 @@
-[FE] LiveKit SDK integration into a new chat environment
-Bring LiveKit SDK into new chat environment and try to make the basic connection with the LiveKit Server/Agent (build onsite). 
-Try to implement a few areas in the current design, such as “moving abstract form”, audio indicator.
-
-Figma Links:
-https://www.figma.com/design/4x1T7IbI3OhtYWr9CH9I7V/Habitto-AI-Assistant---Chat-Revamp?node-id=40-1168&p=f&t=5OB4jl2Qwa6K0MUD-0
-Labels: 
-Components: 

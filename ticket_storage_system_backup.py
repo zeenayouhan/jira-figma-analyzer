@@ -109,25 +109,12 @@ class TicketStorageSystem:
         ))
         
         # Store questions
-        analysis = ticket_data.get("analysis", {})
-        questions = []
-        
-        # Extract questions from different categories
-        if "suggested_questions" in analysis:
-            questions.extend([(q, "suggested") for q in analysis["suggested_questions"]])
-        if "design_questions" in analysis:
-            questions.extend([(q, "design") for q in analysis["design_questions"]])
-        if "business_questions" in analysis:
-            questions.extend([(q, "business") for q in analysis["business_questions"]])
-        
-        # Also check direct questions field
-        direct_questions = ticket_data.get("questions", [])
-        questions.extend([(q, "general") for q in direct_questions])
-        for question, question_type in questions:
+        questions = ticket_data.get('questions', [])
+        for question in questions:
             cursor.execute('''
                 INSERT INTO questions (ticket_id, question_text, question_type)
                 VALUES (?, ?, ?)
-            ''', (ticket_id, question, question_type))
+            ''', (ticket_id, question, "general"))
         
         # Store test cases
         test_cases = ticket_data.get('test_cases', [])
@@ -164,28 +151,12 @@ class TicketStorageSystem:
             return None
         
         # Get questions
-        try:
-            cursor.execute('SELECT question FROM questions WHERE ticket_id = ?', (ticket_id,))
-            questions = [row[0] for row in cursor.fetchall()]
-        except sqlite3.OperationalError:
-            # Fallback if question column doesn't exist
-            try:
-                cursor.execute('SELECT question_text FROM questions WHERE ticket_id = ?', (ticket_id,))
-                questions = [row[0] for row in cursor.fetchall()]
-            except sqlite3.OperationalError:
-                questions = []
+        cursor.execute('SELECT question FROM questions WHERE ticket_id = ?', (ticket_id,))
+        questions = [row[0] for row in cursor.fetchall()]
         
         # Get test cases
-        try:
-            cursor.execute('SELECT test_case FROM test_cases WHERE ticket_id = ?', (ticket_id,))
-            test_cases = [row[0] for row in cursor.fetchall()]
-        except sqlite3.OperationalError:
-            # Fallback if test_case column doesn't exist
-            try:
-                cursor.execute('SELECT test_case_text FROM test_cases WHERE ticket_id = ?', (ticket_id,))
-                test_cases = [row[0] for row in cursor.fetchall()]
-            except sqlite3.OperationalError:
-                test_cases = []
+        cursor.execute('SELECT test_case FROM test_cases WHERE ticket_id = ?', (ticket_id,))
+        test_cases = [row[0] for row in cursor.fetchall()]
         
         conn.close()
         
@@ -265,23 +236,23 @@ class TicketStorageSystem:
     
     def get_all_tickets(self, limit=50):
         try:
-            """Get all tickets with pagination."""
-            conn = sqlite3.connect(self.db_path)
-            cursor = conn.cursor()
-            
-            cursor.execute('''
-                SELECT id, ticket_key, title, description, created_at, updated_at
-                FROM tickets 
-                ORDER BY created_at DESC 
-                LIMIT ?
-            ''', (limit,))
-            
-            rows = cursor.fetchall()
-            conn.close()
-            
-            return [{
-                'id': row[0],
-                'ticket_key': row[1],
+        """Get all tickets with pagination."""
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+        
+        cursor.execute('''
+            SELECT id, ticket_id, title, description, created_at, updated_at
+            FROM tickets 
+            ORDER BY created_at DESC 
+            LIMIT ?
+        ''', (limit,))
+        
+        rows = cursor.fetchall()
+        conn.close()
+        
+        return [{
+            'id': row[0],
+            'ticket_key': row[1],
             'title': row[2],
             'description': row[3],
             'created_at': row[4],
@@ -292,9 +263,9 @@ class TicketStorageSystem:
             return []
 
     def get_recent_tickets(self, limit=10):
-        """Get recent tickets."""
         try:
-            return self.get_all_tickets(limit=limit)
+        """Get recent tickets (same as get_all_tickets but with default limit of 5)."""
+        return self.get_all_tickets(limit=limit)
         except Exception as e:
             print(f"Error in get_recent_tickets: {e}")
             return []
@@ -315,54 +286,6 @@ class TicketStorageSystem:
         conn.close()
         
         return [{'date': row[0], 'count': row[1]} for row in rows]
-    
-    
-    def delete_ticket(self, ticket_id: str) -> bool:
-        """Delete a ticket and all its associated data."""
-        try:
-            conn = sqlite3.connect(self.db_path)
-            cursor = conn.cursor()
-            
-            # Delete from questions table using ticket_id (foreign key)
-            cursor.execute('DELETE FROM questions WHERE ticket_id = ?', (ticket_id,))
-            
-            # Delete from test_cases table using ticket_id (foreign key)
-            cursor.execute('DELETE FROM test_cases WHERE ticket_id = ?', (ticket_id,))
-            
-            # Delete from tickets table using ticket_key (correct column name)
-            cursor.execute('DELETE FROM tickets WHERE ticket_key = ?', (ticket_id,))
-            
-            # Check if any rows were affected
-            rows_affected = cursor.rowcount
-            
-            conn.commit()
-            conn.close()
-            
-            return rows_affected > 0
-            
-        except Exception as e:
-            print(f"Error deleting ticket {ticket_id}: {e}")
-            return False
-    
-    def delete_all_tickets(self) -> bool:
-        """Delete all tickets and associated data."""
-        try:
-            conn = sqlite3.connect(self.db_path)
-            cursor = conn.cursor()
-            
-            # Delete all data
-            cursor.execute('DELETE FROM questions')
-            cursor.execute('DELETE FROM test_cases')
-            cursor.execute('DELETE FROM tickets')
-            
-            conn.commit()
-            conn.close()
-            
-            return True
-            
-        except Exception as e:
-            print(f"Error deleting all tickets: {e}")
-            return False
     
     def get_priority_distribution(self) -> List[Dict[str, Any]]:
         """Get priority distribution data for charts."""

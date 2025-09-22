@@ -167,7 +167,7 @@ class JiraFigmaAnalyzer:
                 try:
                     self.feedback_learning = FeedbackLearningSystem(self.feedback_system)
                     print("🧠 Feedback Learning System initialized")
-                except Exception as e:
+        except Exception as e:
                     print(f"⚠️ Feedback learning system initialization failed: {e}")
                     self.feedback_learning = None
             else:
@@ -854,7 +854,7 @@ class JiraFigmaAnalyzer:
         test_cases = []
         content_lower = f"{ticket.title} {ticket.description}".lower()
         
-        test_cases.extend([
+            test_cases.extend([
         "**Functional Tests:**",
         "• Verify the main feature works as described in acceptance criteria",
         "• Verify user can complete the primary user journey successfully",
@@ -863,7 +863,7 @@ class JiraFigmaAnalyzer:
         "• Verify data validation and business rule enforcement",
         ])
         
-        test_cases.extend([
+            test_cases.extend([
         "**Security & Compliance Tests:**",
         "• Verify data encryption in transit and at rest",
         "• Verify audit logging for financial advisory compliance",
@@ -999,7 +999,7 @@ class JiraFigmaAnalyzer:
             # Always try to generate questions, with fallback
             try:
                 if self.openai_client and design_context.strip():
-                    response = self.openai_client.chat.completions.create(
+                response = self.openai_client.chat.completions.create(
                     model="gpt-3.5-turbo",
                     messages=[
                         {
