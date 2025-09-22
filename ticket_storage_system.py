@@ -96,7 +96,7 @@ class TicketStorageSystem:
         
         cursor.execute('''
             INSERT OR REPLACE INTO tickets 
-            (ticket_id, ticket_key, title, description, created_at, updated_at, analysis_data)
+            (id, ticket_key, title, description, created_at, updated_at, analysis_data)
             VALUES (?, ?, ?, ?, ?, ?, ?)
         ''', (
             ticket_id,
