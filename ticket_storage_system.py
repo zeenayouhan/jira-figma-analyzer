@@ -310,14 +310,14 @@ class TicketStorageSystem:
             conn = sqlite3.connect(self.db_path)
             cursor = conn.cursor()
             
-            # Delete from questions table
+            # Delete from questions table using ticket_id (foreign key)
             cursor.execute('DELETE FROM questions WHERE ticket_id = ?', (ticket_id,))
             
-            # Delete from test_cases table
+            # Delete from test_cases table using ticket_id (foreign key)
             cursor.execute('DELETE FROM test_cases WHERE ticket_id = ?', (ticket_id,))
             
-            # Delete from tickets table
-            cursor.execute('DELETE FROM tickets WHERE ticket_id = ?', (ticket_id,))
+            # Delete from tickets table using ticket_key (correct column name)
+            cursor.execute('DELETE FROM tickets WHERE ticket_key = ?', (ticket_id,))
             
             # Check if any rows were affected
             rows_affected = cursor.rowcount

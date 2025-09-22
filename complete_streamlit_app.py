@@ -31,6 +31,10 @@ import tempfile
 from pathlib import Path
 import hashlib
 import uuid
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 # Initialize storage system
 @st.cache_resource
