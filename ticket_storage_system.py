@@ -284,11 +284,31 @@ class TicketStorageSystem:
             if (query_lower in data['title'].lower() or 
                 query_lower in data['description'].lower() or 
                 query_lower in data['ticket_key'].lower()):
+                
+                # Get question and test case counts for this ticket
+                conn = sqlite3.connect(self.db_path)
+                cursor = conn.cursor()
+                
+                # Count questions
+                cursor.execute('SELECT COUNT(*) FROM questions WHERE ticket_id = ?', (ticket_id,))
+                question_count = cursor.fetchone()[0]
+                
+                # Count test cases
+                cursor.execute('SELECT COUNT(*) FROM test_cases WHERE ticket_id = ?', (ticket_id,))
+                test_case_count = cursor.fetchone()[0]
+                
+                conn.close()
+                
                 results.append({
+                    'id': ticket_id,
                     'ticket_id': ticket_id,
                     'ticket_key': data['ticket_key'],
                     'title': data['title'],
-                    'created_at': data['created_at']
+                    'description': data.get('description', ''),
+                    'created_at': data['created_at'],
+                    'question_count': question_count,
+                    'test_case_count': test_case_count,
+                    'risk_count': 0  # Mock data - would need risks table
                 })
         
         return results[:limit]
