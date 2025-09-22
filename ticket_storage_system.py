@@ -109,12 +109,25 @@ class TicketStorageSystem:
         ))
         
         # Store questions
-        questions = ticket_data.get('questions', [])
+        analysis = ticket_data.get("analysis", {})
+        questions = []
+        
+        # Extract questions from different categories
+        if "suggested_questions" in analysis:
+            questions.extend([(q, "suggested") for q in analysis["suggested_questions"]])
+        if "design_questions" in analysis:
+            questions.extend([(q, "design") for q in analysis["design_questions"]])
+        if "business_questions" in analysis:
+            questions.extend([(q, "business") for q in analysis["business_questions"]])
+        
+        # Also check direct questions field
+        direct_questions = ticket_data.get("questions", [])
+        questions.extend([(q, "general") for q in direct_questions])
         for question in questions:
             cursor.execute('''
                 INSERT INTO questions (ticket_id, question_text, question_type)
                 VALUES (?, ?, ?)
-            ''', (ticket_id, question, "general"))
+            ''', (ticket_id, question, question_type))
         
         # Store test cases
         test_cases = ticket_data.get('test_cases', [])
@@ -257,7 +270,7 @@ class TicketStorageSystem:
             cursor = conn.cursor()
             
             cursor.execute('''
-                SELECT id, ticket_id, title, description, created_at, updated_at
+                SELECT id, ticket_key, title, description, created_at, updated_at
                 FROM tickets 
                 ORDER BY created_at DESC 
                 LIMIT ?
