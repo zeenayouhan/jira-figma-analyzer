@@ -1,3 +1,4 @@
+# Force rebuild: 2025-09-22T13:40:20.029292
 #!/usr/bin/env python3
 """
 Railway startup script for Jira-Figma Analyzer

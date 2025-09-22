@@ -1,11 +1,16 @@
 {
-  "$schema": "https://railway.app/railway.schema.json",
   "build": {
-    "builder": "NIXPACKS"
+    "buildCommand": "pip install -r requirements.txt"
   },
   "deploy": {
     "startCommand": "python start.py",
     "restartPolicyType": "ON_FAILURE",
-    "restartPolicyMaxRetries": 10
-  }
+    "restartPolicyMaxRetries": 3
+  },
+  "environment": {
+    "PYTHONPATH": "/app",
+    "STREAMLIT_SERVER_HEADLESS": "true",
+    "STREAMLIT_SERVER_ENABLE_CORS": "true"
+  },
+  "_lastUpdated": "2025-09-22T13:40:20.028817"
 }
