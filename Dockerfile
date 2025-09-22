@@ -20,6 +20,7 @@ RUN apt-get update && apt-get install -y \
     libgdk-pixbuf-xlib-2.0-dev \
     libffi-dev \
     shared-mime-info \
+    curl \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy requirements first for better caching
@@ -38,13 +39,16 @@ RUN mkdir -p analysis_outputs logs
 ENV PYTHONPATH=/app
 ENV STREAMLIT_SERVER_PORT=8501
 ENV STREAMLIT_SERVER_ADDRESS=0.0.0.0
+ENV STREAMLIT_SERVER_HEADLESS=true
+ENV STREAMLIT_BROWSER_GATHER_USAGE_STATS=false
+ENV STREAMLIT_SERVER_ENABLE_CORS=true
 
 # Expose port
 EXPOSE 8501
 
-# Health check
-HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
+# Health check with longer timeout
+HEALTHCHECK --interval=30s --timeout=30s --start-period=60s --retries=5 \
     CMD curl -f http://localhost:8501/_stcore/health || exit 1
 
-# Run the application
-CMD ["streamlit", "run", "complete_streamlit_app.py", "--server.port=8501", "--server.address=0.0.0.0"]
+# Run the application using the startup script
+CMD ["python", "start.py"]
