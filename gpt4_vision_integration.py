@@ -482,15 +482,18 @@ Provide a comprehensive comparison with specific recommendations.
                 localization_recommendations=parsed_data.get('localization_recommendations', []),
                 
                 design_quality_score=parsed_data.get('design_quality_score', 7.0),
-                accessibility_assessment=parsed_data.get('accessibility', {}),
+                accessibility_score=parsed_data.get('accessibility', {}).get('score', 7.0) if isinstance(parsed_data.get('accessibility', {}), dict) else 7.0,
+                accessibility=parsed_data.get('accessibility', {}),
                 design_patterns_identified=parsed_data.get('design_patterns', []),
                 improvement_suggestions=parsed_data.get('improvements', []),
+                design_quality_breakdown=parsed_data.get('design_quality_breakdown', {}),
                 
                 user_flow_insights=parsed_data.get('user_flow_insights', []),
+                user_flow_analysis=parsed_data.get('user_flow_analysis', {}),
                 navigation_assessment=parsed_data.get('navigation_assessment', {}),
                 interaction_recommendations=parsed_data.get('interaction_recommendations', []),
                 
-                implementation_complexity=parsed_data.get('implementation_complexity', 'medium'),
+                implementation_complexity=parsed_data.get('implementation_complexity', {}),
                 development_recommendations=parsed_data.get('development_recommendations', []),
                 potential_issues=parsed_data.get('potential_issues', []),
                 
