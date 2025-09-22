@@ -167,7 +167,7 @@ class JiraFigmaAnalyzer:
                 try:
                     self.feedback_learning = FeedbackLearningSystem(self.feedback_system)
                     print("🧠 Feedback Learning System initialized")
-        except Exception as e:
+                except Exception as e:
                     print(f"⚠️ Feedback learning system initialization failed: {e}")
                     self.feedback_learning = None
             else:
@@ -854,25 +854,25 @@ class JiraFigmaAnalyzer:
         test_cases = []
         content_lower = f"{ticket.title} {ticket.description}".lower()
         
-            test_cases.extend([
-        "**Functional Tests:**",
-        "• Verify the main feature works as described in acceptance criteria",
-        "• Verify user can complete the primary user journey successfully",
-        "• Verify feature integrates with existing authentication system",
-        "• Verify feature respects user permissions and access controls",
-        "• Verify data validation and business rule enforcement",
+        test_cases.extend([
+            "**Functional Tests:**",
+            "• Verify the main feature works as described in acceptance criteria",
+            "• Verify user can complete the primary user journey successfully",
+            "• Verify feature integrates with existing authentication system",
+            "• Verify feature respects user permissions and access controls",
+            "• Verify data validation and business rule enforcement",
         ])
         
-            test_cases.extend([
-        "**Security & Compliance Tests:**",
-        "• Verify data encryption in transit and at rest",
-        "• Verify audit logging for financial advisory compliance",
-        "• Verify user session management and timeout handling",
+        test_cases.extend([
+            "**Security & Compliance Tests:**",
+            "• Verify data encryption in transit and at rest",
+            "• Verify audit logging for financial advisory compliance",
+            "• Verify user session management and timeout handling",
         ])
         
         # Performance
         test_cases.extend([
-        "**Performance Tests:**",
+            "**Performance Tests:**",
         "• Verify feature responds within acceptable time limits (2-3 seconds)",
         "• Verify feature handles expected concurrent user load",
         ])
@@ -999,7 +999,7 @@ class JiraFigmaAnalyzer:
             # Always try to generate questions, with fallback
             try:
                 if self.openai_client and design_context.strip():
-                response = self.openai_client.chat.completions.create(
+                    response = self.openai_client.chat.completions.create(
                     model="gpt-3.5-turbo",
                     messages=[
                         {
@@ -1007,7 +1007,7 @@ class JiraFigmaAnalyzer:
                             "content": """You are a senior UX/UI designer and React Native developer with expertise in Japanese localization. Generate highly specific design questions based ONLY on the exact ticket requirements provided.
 
 CRITICAL REQUIREMENTS:
-1. Read the ticket title and description carefully
+                    1. Read the ticket title and description carefully
 2. Generate questions ONLY about the specific feature mentioned in the ticket
 3. DO NOT ask about random screens or components from the Figma file
 4. Focus on the exact UI elements needed for this specific feature
@@ -1016,7 +1016,7 @@ CRITICAL REQUIREMENTS:
 7. If no relevant screens are found in Figma, generate implementation questions for the specific feature
 
 JAPANESE CONTENT CONSIDERATIONS:
-- If Japanese text is detected in the design, include questions about text expansion/contraction
+                    - If Japanese text is detected in the design, include questions about text expansion/contraction
 - Consider Japanese typography, character support, and input methods
 - Ask about localization strategy for Japanese vs English content
 - Consider Japanese UI patterns and user expectations
@@ -1027,31 +1027,31 @@ Generate 6-8 targeted questions about implementing THIS SPECIFIC FEATURE."""
                                 "role": "user", 
                                 "content": f"""
 TICKET TO ANALYZE:
-Title: {ticket.title}
+                    Title: {ticket.title}
 Description: {ticket.description}
 
 SPECIFIC FEATURE TO FOCUS ON: 
-{ticket.title}
+                    {ticket.title}
 
 REQUIREMENTS FROM DESCRIPTION:
-{ticket.description}
+                    {ticket.description}
 
 MEDIA ANALYSIS (if provided):
-{self._get_media_context_for_questions(analysis)}
+    {self._get_media_context_for_questions(analysis)}
 
 FIGMA SCREEN INTERACTIONS (if available):
-{self._get_figma_interaction_context(analysis)}
+    {self._get_figma_interaction_context(analysis)}
 
 GPT-4 VISUAL ANALYSIS (if available):
-{self._get_visual_context_for_questions(analysis)}
+    {self._get_visual_context_for_questions(analysis)}
 
 FEEDBACK-DRIVEN IMPROVEMENTS (if available):
-{self._get_feedback_learning_context(['design']) if self.feedback_learning else ''}
+    {self._get_feedback_learning_context(['design']) if self.feedback_learning else ''}
 
 Generate design questions that are DIRECTLY related to implementing this specific feature: "{ticket.title}"
 
 Focus on:
-- UI components needed for this exact feature
+    - UI components needed for this exact feature
 - User interaction patterns for this specific functionality  
 - Navigation flows and button behaviors from Figma screens
 - Success/error states and screen transitions
@@ -1063,12 +1063,12 @@ Focus on:
 - Accessibility for this specific feature
 
 DO NOT ask about:
-- Random screens from the Figma file
+    - Random screens from the Figma file
 - Unrelated features or components
 - General app design questions
 
 Example good questions for UI interactions and navigation:
-- Where should the "Back" button navigate when pressed?
+    - Where should the "Back" button navigate when pressed?
 - What should happen when the user taps the "Submit" button?
 - How should the success screen be designed after form submission?
 - Where should the "Next" button lead in the user flow?
@@ -1078,7 +1078,7 @@ Example good questions for UI interactions and navigation:
 - How should the navigation hierarchy work between screens?
 
 Example good questions for "Enable Editing of Occupation, Country of Residence":
-- How should the occupation dropdown be designed and positioned in the profile form?
+    - How should the occupation dropdown be designed and positioned in the profile form?
 - What validation states should be shown for country selection?
 - How should the save/update flow work for these specific fields?
 - Where should the back button navigate from the profile editing screen?
@@ -1087,7 +1087,7 @@ Example good questions for "Enable Editing of Occupation, Country of Residence":
 Generate similar targeted questions for: {ticket.title}
 
 IMPORTANT: Based on the Figma screens and buttons detected above, ask specific questions about:
-1. Button navigation destinations
+    1. Button navigation destinations
 2. Success/error screen flows  
 3. Back button behavior
 4. Form submission outcomes
