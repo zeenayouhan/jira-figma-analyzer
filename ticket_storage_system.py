@@ -151,12 +151,28 @@ class TicketStorageSystem:
             return None
         
         # Get questions
-        cursor.execute('SELECT question FROM questions WHERE ticket_id = ?', (ticket_id,))
-        questions = [row[0] for row in cursor.fetchall()]
+        try:
+            cursor.execute('SELECT question FROM questions WHERE ticket_id = ?', (ticket_id,))
+            questions = [row[0] for row in cursor.fetchall()]
+        except sqlite3.OperationalError:
+            # Fallback if question column doesn't exist
+            try:
+                cursor.execute('SELECT question_text FROM questions WHERE ticket_id = ?', (ticket_id,))
+                questions = [row[0] for row in cursor.fetchall()]
+            except sqlite3.OperationalError:
+                questions = []
         
         # Get test cases
-        cursor.execute('SELECT test_case FROM test_cases WHERE ticket_id = ?', (ticket_id,))
-        test_cases = [row[0] for row in cursor.fetchall()]
+        try:
+            cursor.execute('SELECT test_case FROM test_cases WHERE ticket_id = ?', (ticket_id,))
+            test_cases = [row[0] for row in cursor.fetchall()]
+        except sqlite3.OperationalError:
+            # Fallback if test_case column doesn't exist
+            try:
+                cursor.execute('SELECT test_case_text FROM test_cases WHERE ticket_id = ?', (ticket_id,))
+                test_cases = [row[0] for row in cursor.fetchall()]
+            except sqlite3.OperationalError:
+                test_cases = []
         
         conn.close()
         

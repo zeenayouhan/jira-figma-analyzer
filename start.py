@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
 Railway startup script for Jira-Figma Analyzer
+Handles errors gracefully and provides better logging
 """
 
 import os
@@ -19,6 +20,15 @@ def main():
     
     print(f"Starting Jira-Figma Analyzer on port {port}")
     print(f"Environment variables: PORT={os.getenv('PORT')}, STREAMLIT_SERVER_PORT={os.getenv('STREAMLIT_SERVER_PORT')}")
+    
+    # Fix database schema before starting
+    print("Fixing database schema...")
+    try:
+        from fix_database_schema import fix_database_schema
+        fix_database_schema()
+        print("✅ Database schema fixed")
+    except Exception as e:
+        print(f"⚠️ Database schema fix failed: {e}")
     
     # Run Streamlit
     cmd = [
