@@ -1,11 +1,20 @@
 [phases.setup]
-nixPkgs = ["tesseract", "tesseract-ocr-jpn"]
-
-[phases.install]
-cmds = ["pip install -r requirements.txt"]
-
-[phases.build]
-cmds = ["echo 'Build completed'"]
+aptPkgs = [
+    "tesseract-ocr", 
+    "tesseract-ocr-jpn", 
+    "libgl1-mesa-dev", 
+    "libglib2.0-0", 
+    "libsm6", 
+    "libxext6", 
+    "libxrender-dev", 
+    "libgomp1",
+    "libglib2.0-dev",
+    "libcairo2-dev",
+    "libpango1.0-dev",
+    "libgdk-pixbuf2.0-dev",
+    "libffi-dev",
+    "shared-mime-info"
+]
 
 [start]
 cmd = "streamlit run complete_streamlit_app.py --server.port=$PORT --server.address=0.0.0.0 --server.headless=true"
