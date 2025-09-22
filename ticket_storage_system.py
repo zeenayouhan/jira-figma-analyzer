@@ -234,7 +234,8 @@ class TicketStorageSystem:
                     total_size += os.path.getsize(file_path)
         return total_size
     
-    def get_all_tickets(self, limit: int = 100) -> List[Dict[str, Any]]:
+    def get_all_tickets(self, limit=50):
+        try:
         """Get all tickets with pagination."""
         conn = sqlite3.connect(self.db_path)
         cursor = conn.cursor()
@@ -257,10 +258,17 @@ class TicketStorageSystem:
             'created_at': row[4],
             'updated_at': row[5]
         } for row in rows]
+        except Exception as e:
+            print(f"Error in get_all_tickets: {e}")
+            return []
 
-    def get_recent_tickets(self, limit: int = 5) -> List[Dict[str, Any]]:
+    def get_recent_tickets(self, limit=10):
+        try:
         """Get recent tickets (same as get_all_tickets but with default limit of 5)."""
         return self.get_all_tickets(limit=limit)
+        except Exception as e:
+            print(f"Error in get_recent_tickets: {e}")
+            return []
 
     def get_tickets_timeline(self) -> List[Dict[str, Any]]:
         """Get tickets timeline data for charts."""
