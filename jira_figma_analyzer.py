@@ -2380,8 +2380,8 @@ IMPORTANT: Based on the Figma screens and buttons detected above, ask specific q
             ])
         
         # Questions based on accessibility
-        if visual_analysis.accessibility_assessment:
-            accessibility_issues = visual_analysis.accessibility_assessment.get('issues', [])
+        if visual_analysis.accessibility:
+            accessibility_issues = visual_analysis.accessibility.get('issues', [])
             if accessibility_issues:
                 questions.extend([
                     "Accessibility concerns were identified in the design. What are the accessibility requirements?",

@@ -36,7 +36,7 @@ class VisualAnalysisResult:
     # Design Quality Assessment
     design_quality_score: float  # 0-10
     accessibility_score: float  # 0-10
-    accessibility: Dict[str, Any]  # Alias for accessibility_assessment
+    accessibility: Dict[str, Any]  # Alias for accessibility
     design_patterns_identified: List[str]
     improvement_suggestions: List[str]
     design_quality_breakdown: Dict[str, Any]
@@ -536,7 +536,7 @@ Provide a comprehensive comparison with specific recommendations.
                 'ui_components': vision_result.ui_components_identified,
                 'design_quality_score': vision_result.design_quality_score,
                 'japanese_elements': vision_result.japanese_elements_detected,
-                'accessibility_issues': vision_result.accessibility_assessment.get('issues', []),
+                'accessibility_issues': vision_result.accessibility.get('issues', []),
                 'improvement_suggestions': vision_result.improvement_suggestions,
                 'implementation_complexity': vision_result.implementation_complexity
             },

@@ -139,9 +139,9 @@ def display_gpt4_vision_results(result):
                     st.write(f"• {issue}")
             
             # Accessibility Assessment
-            if visual_analysis.accessibility_assessment:
+            if visual_analysis.accessibility:
                 st.subheader("♿ Accessibility Assessment")
-                acc_assessment = visual_analysis.accessibility_assessment
+                acc_assessment = visual_analysis.accessibility
                 
                 if acc_assessment.get('issues'):
                     st.write("**Issues Found:**")
