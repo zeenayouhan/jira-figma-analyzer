@@ -1330,4 +1330,83 @@ if __name__ == "__main__":
     print(f"Extracted file key: {file_key}")
     
     print("🎨 Figma Integration System Ready")
-    print("Set FIGMA_ACCESS_TOKEN environment variable to enable API access") 
+    print("Set FIGMA_ACCESS_TOKEN environment variable to enable API access")
+    def _capture_screen_screenshots(self, file_id: str, screens: List[Dict[str, Any]]) -> Dict[str, str]:
+        """Capture screenshots of individual screens for GPT-4 Vision analysis."""
+        screenshots = {}
+        
+        if not self.figma_token:
+            print("⚠️ No Figma token available for screenshot capture")
+            return screenshots
+        
+        try:
+            # Get the file's images endpoint
+            images_url = f"https://api.figma.com/v1/images/{file_id}"
+            
+            # Prepare node IDs for each screen
+            node_ids = []
+            screen_names = []
+            
+            for screen in screens:
+                if isinstance(screen, dict) and 'id' in screen:
+                    node_ids.append(screen['id'])
+                    screen_names.append(screen.get('name', f'Screen_{len(screen_names)}'))
+            
+            if not node_ids:
+                print("⚠️ No valid screen nodes found for screenshot capture")
+                return screenshots
+            
+            # Request images from Figma API
+            params = {
+                'ids': ','.join(node_ids),
+                'format': 'png',
+                'scale': 2  # High resolution for better analysis
+            }
+            
+            headers = {
+                'X-Figma-Token': self.figma_token
+            }
+            
+            response = requests.get(images_url, params=params, headers=headers)
+            
+            if response.status_code == 200:
+                data = response.json()
+                images = data.get('images', {})
+                
+                # Save screenshots to temporary files
+                import tempfile
+                import os
+                
+                temp_dir = tempfile.mkdtemp(prefix='figma_screenshots_')
+                
+                for i, node_id in enumerate(node_ids):
+                    if node_id in images and images[node_id]:
+                        image_url = images[node_id]
+                        
+                        # Download the image
+                        img_response = requests.get(image_url)
+                        if img_response.status_code == 200:
+                            # Save to temporary file
+                            screen_name = screen_names[i]
+                            safe_name = re.sub(r'[^a-zA-Z0-9_-]', '_', screen_name)
+                            screenshot_path = os.path.join(temp_dir, f"{safe_name}.png")
+                            
+                            with open(screenshot_path, 'wb') as f:
+                                f.write(img_response.content)
+                            
+                            screenshots[screen_name] = screenshot_path
+                            print(f"✅ Captured screenshot for {screen_name}")
+                        else:
+                            print(f"⚠️ Failed to download screenshot for {screen_name}")
+                    else:
+                        print(f"⚠️ No image URL available for {screen_names[i]}")
+                
+                print(f"📸 Captured {len(screenshots)} screenshots in {temp_dir}")
+                
+            else:
+                print(f"⚠️ Failed to get screenshots from Figma API: {response.status_code}")
+                
+        except Exception as e:
+            print(f"❌ Error capturing screenshots: {e}")
+        
+        return screenshots
